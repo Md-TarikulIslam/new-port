@@ -41,7 +41,7 @@ const Hero = () => {
                         <a href="https://github.com/Md-TarikulIslam"><p className=' text-4xl'><FaGithubAlt /></p></a>
 
                         <a href="mailto:tarikul2605@gmail.com"><p className=' text-4xl'><FcFeedback /></p></a>
-                        <a href="tel:880 1739426293"><p className='text-4xl'><FcPhoneAndroid /></p></a>
+                        <a href="tel:01739426293"><p className='text-4xl'><FcPhoneAndroid /></p></a>
                     </div>
 
                     <a href="https://drive.google.com/uc?id=1a19KFmNoYVRvmXOH_tv0F9lmeuMVn0rj&export=download"
