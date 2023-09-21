@@ -104,12 +104,12 @@ export default function Skills() {
             <Card className="bg-gradient-to-r from-cyan-50 to-blue-100">
                 <CardBody >
                     <Typography className="text-center pt-16 mb-4 text-black">My Technical Skills</Typography>
-                    <div className="grid grid-cols-7 gap-5 max-w-screen-sm mx-auto">
+                    <div className="grid grid-cols-5 lg:grid-cols-7 gap-5 max-w-screen-sm mx-auto">
                         {
                             allData.map(data => {
                                 return (
                                     <div className=" rounded-2xl bg-white shadow-sm hover:scale-[1.03] hover:shadow-white">
-                                        <img className="w-20 mx-auto p-2" src={data.img} alt="" />
+                                        <img className="w-20  mx-auto p-2" src={data.img} alt="" />
                                     </div>
                                 )
                             })

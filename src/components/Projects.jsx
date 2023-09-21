@@ -219,7 +219,7 @@ const Projects = () => {
                         ProjectsData.map(data => {
                             return (
                                 <div className='mx-auto'>
-                                    <Card className="mt-6 w-88">
+                                    <Card className="mt-6 w-88 hover:shadow-orange-500 hover:shadow-md">
                                         <CardHeader color="blue-gray" className="relative h-56">
                                             <img
                                                 src={data.img}
@@ -271,7 +271,7 @@ const Projects = () => {
                                 allData.map(data => {
                                     return (
                                         <div className='mx-auto'>
-                                            <Card className="mt-6 w-88">
+                                            <Card className="mt-6 w-88 hover:shadow-orange-500 hover:shadow-md">
                                                 <CardHeader color="blue-gray" className="relative h-56">
                                                     <img
                                                         src={data.img}
