@@ -108,7 +108,7 @@ export default function Skills() {
                         {
                             allData.map(data => {
                                 return (
-                                    <div className=" rounded-2xl bg-white shadow-sm hover:scale-[1.03] hover:shadow-white">
+                                    <div className="transition   ease-in-out rounded-2xl bg-white shadow-sm hover:scale-[1.10] hover:shadow-white">
                                         <img className="w-20  mx-auto p-2" src={data.img} alt="" />
                                     </div>
                                 )
@@ -117,14 +117,14 @@ export default function Skills() {
                     </div>
                     <Typography className="text-center pt-10 mb-4 text-black">My Experiences</Typography>
                     <div className="flex items-center justify-center gap-5 max-w-screen-sm mx-auto flex-col lg:flex-row">
-                        <Card className="flex-1 w-full rounded-2xl bg-white shadow-sm hover:scale-[1.03] hover:shadow-white">
+                        <Card className="flex-1 w-full transition   ease-in-out rounded-2xl bg-white shadow-sm hover:scale-[1.03] hover:shadow-white">
                             <CardBody>
-                                <Typography className="text-orange-600 text-2xl font-semibold">Jr. Software Engineer</Typography>
+                                <Typography className="text-orange-600 text-2xl  font-semibold">Jr. Software Engineer</Typography>
                                 <Typography className="text-blue-900 my-1">Horizon Rising Star</Typography>
                                 <Typography className="text-sm"> May, 2023 - Present</Typography>
                             </CardBody>
                         </Card>
-                        <Card className="flex-1 w-full rounded-2xl bg-white shadow-sm hover:scale-[1.03] hover:shadow-white">
+                        <Card className="flex-1 w-full rounded-2xl transition   ease-in-out bg-white shadow-sm hover:scale-[1.03] hover:shadow-white">
                             <CardBody>
                                 <Typography className="text-orange-600 text-2xl font-semibold">Jr. Software Engineer (Intern)</Typography>
                                 <Typography className="text-blue-900 my-1">Suffix IT Limited</Typography>

@@ -12,8 +12,8 @@ import { FaGithubAlt } from 'react-icons/fa';
 
 const Hero = () => {
     return (
-        <div className='max-w-screen-xl mx-auto px-2 lg:px-0' id='home'>
-            <Card className="w-full my-10 flex-col lg:flex-row  items-center">
+        <div className='max-w-screen-xl mx-auto px-2 lg:px-0 ' id='home'>
+            <Card className="w-full mb-10  flex-col lg:flex-row  items-center">
                 <CardHeader
                     shadow={false}
                     floated={false}
@@ -45,7 +45,7 @@ const Hero = () => {
                     </div>
 
                     <a href="https://drive.google.com/uc?id=1a19KFmNoYVRvmXOH_tv0F9lmeuMVn0rj&export=download"
-                            download><Button className="flex items-center gap-2 mt-4 bg-blue-900 hover:bg-black">Download CV <FcNews className="text-xl" /></Button></a>
+                            download><Button className="flex items-center gap-2 mt-4 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
 
 
                 </CardBody>

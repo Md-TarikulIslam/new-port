@@ -1,8 +1,9 @@
-import { Button, Card, CardBody, Input } from '@material-tailwind/react'
+import { Button, Card, CardBody, Input, Textarea } from '@material-tailwind/react'
 import React, { useRef } from 'react'
 import emailjs from "@emailjs/browser";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FcFeedback } from 'react-icons/fc';
 
 
 
@@ -63,7 +64,7 @@ const Contact = () => {
                             />
                        </div>
                          
-                            <Input
+                            <Textarea
                                 type="text"
                                 name='message'
                                 placeholder="Message"
@@ -77,8 +78,8 @@ const Contact = () => {
 
                           
                        
-                            <Button className="mt-8" value="Send" type="submit">
-                                Send Message
+                            <Button className="mt-2 flex items-center gap-2" value="Send" type="submit">
+                                Send Message <FcFeedback  className='text-xl'/>
                             </Button>
                         </form>
 

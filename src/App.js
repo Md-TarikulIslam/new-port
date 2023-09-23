@@ -6,10 +6,12 @@ import Homepage from "./pages/Homepage";
 function App() {
   return (
     <div className="bg-[#d3e4eb]">
-      <div>
-        <Homepage />
+     
+       <div className="pt-28">
+       <Homepage />
+       </div>
         <Footer />
-      </div>
+    
       <ToastContainer />
     </div>
   );

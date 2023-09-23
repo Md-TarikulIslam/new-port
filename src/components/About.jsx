@@ -54,7 +54,7 @@ export default function About() {
                             Overall, I am confident that my skills, experience, combined with my technical skills, and strong work ethic, make me an ideal candidate for any web development role. I am excited about the opportunities that lie ahead and look forward to making valuable contributions to any team.
                         </Typography>
                         <a href="https://drive.google.com/uc?id=1a19KFmNoYVRvmXOH_tv0F9lmeuMVn0rj&export=download"
-                            download><Button className="flex items-center gap-2 bg-blue-900 hover:bg-black">Download CV <FcNews className="text-xl" /></Button></a>
+                            download><Button className="flex items-center gap-2 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
                     </div>
 
                 </figcaption>

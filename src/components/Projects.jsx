@@ -23,6 +23,7 @@ import player from "../assets/image/pro_img/10player.png";
 import fitness from "../assets/image/pro_img/11fitness.png";
 import nilmrc from "../assets/image/pro_img/12nilmrc.png";
 import connect from "../assets/image/pro_img/13connect.png";
+import { FcBinoculars } from 'react-icons/fc';
 
 
 const ProjectsData = [
@@ -45,7 +46,7 @@ const ProjectsData = [
         name: "Connect",
         title:
             "This is a social media app, you can post and accept requests. Connect with your favorite person",
-        ti: "next",
+        ti: "nextjs",
         ti2: "tailwindcss",
         ti3: "express",
         ti4: "mongodb",
@@ -57,9 +58,9 @@ const ProjectsData = [
         id: 2,
         img: suffix,
         name: "Suffix IT Limited",
-        ti: "react bootstrap",
-        ti2: "css3",
-        ti3: "react",
+        ti: "react",
+        ti2: "react bootstrap",
+        ti3: "css3",
         title: "Suffix IT Limited is a IT service company with various program. Many landing pages design.",
 
         live: "https://suffix-it.netlify.app/",
@@ -75,9 +76,9 @@ const allData = [
         img: tori,
         name: "Tori Limited",
         title: "Tori Limited is a IT service company with various program",
-        ti: "TailwindCSS",
-        ti2: "CSS3",
-        ti3: "React",
+        ti2: "TailwindCSS",
+        ti3: "CSS3",
+        ti: "React",
         live: "https://tori-lim.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/tori-limited",
     },
@@ -85,9 +86,9 @@ const allData = [
         id: 7,
         img: quiz,
         name: "Quiz",
-        ti: "html",
-        ti2: "css",
-        ti3: "react",
+        ti: "html5",
+        ti2: "css3",
+        ti3: "js",
         title: "Quiz app with timer functionality",
 
         live: "https://quiz-tarikul.netlify.app/",
@@ -97,8 +98,8 @@ const allData = [
         id: 8,
         img: keep,
         name: "Keep",
-        ti: "html",
-        ti2: "css",
+        ti: "html5",
+        ti2: "css3",
         ti3: "js",
         title: "Keep app is for keep your daily notes.",
         live: "https://tarikul-keep.netlify.app/",
@@ -108,11 +109,10 @@ const allData = [
         id: 10,
         img: pro1,
         name: "Apple Website",
-        ti: "html",
-        ti2: "css",
-
+        ti: "html5",
+        ti2: "css3",
+        ti3:"js",
         title: "Responsive landing page design",
-
         live: "https://md-tarikulislam.github.io/pro1/",
         github: "https://github.com/Md-TarikulIslam/pro1",
     },
@@ -120,8 +120,9 @@ const allData = [
         id: 11,
         img: pro2,
         name: "Landing Page",
-        ti: "html",
-        ti2: "css",
+        ti: "html5",
+        ti2: "css3",
+        ti3:"js",
         title: "Responsive landing page design",
         live: "https://md-tarikulislam.github.io/pro2/",
         github: "https://github.com/Md-TarikulIslam/pro2",
@@ -132,8 +133,8 @@ const allData = [
         name: "Car Service",
         title:
             "Car service is a project with MongoDB, you can check various car service method here",
-        ti: "tailwindcss",
-        ti2: "react",
+        ti2: "tailwindcss",
+        ti: "react",
         ti3: "express.js",
         ti4: "mongodb",
         live: "https://genius-car-8fe25.web.app",
@@ -144,9 +145,9 @@ const allData = [
         id: 4,
         img: newspaper,
         name: "NewsPaper",
-        ti: "react bootstrap",
-        ti2: "css3",
-        ti3: "react",
+        ti2: "react bootstrap",
+        ti3: "css3",
+        ti: "react",
         ti4: "firebase",
         title: "Newspaper is a website with authentication and daily news.",
         live: "https://newspaper-e362f.web.app/",
@@ -156,9 +157,9 @@ const allData = [
         id: 5,
         img: shop,
         name: "Shopping Website",
-        ti: "react bootstrap",
-        ti2: "css3",
-        ti3: "react",
+        ti2: "react bootstrap",
+        ti3: "css3",
+        ti: "react",
         ti4: "firebase",
         title: "This is a web site where you can select products and give order",
 
@@ -169,7 +170,7 @@ const allData = [
         id: 6,
         img: player,
         name: "Best Player",
-        ti: "html",
+        ti: "html5",
         ti2: "react bootstrap",
         ti3: "css3",
         ti4: "js",
@@ -185,8 +186,8 @@ const allData = [
         id: 9,
         img: fitness,
         name: "Fitness Freak",
-        ti: "html",
-        ti2: "css",
+        ti: "html5",
+        ti2: "css3",
         ti3: "js",
 
         title: "You can count your exercise daily for good health.",
@@ -219,7 +220,7 @@ const Projects = () => {
                         ProjectsData.map(data => {
                             return (
                                 <div className='mx-auto'>
-                                    <Card className="mt-6 w-88 hover:shadow-orange-500 hover:shadow-md">
+                                    <Card className="mt-6 w-88 hover:shadow-orange-500 hover:shadow-md ">
                                         <CardHeader color="blue-gray" className="relative h-56">
                                             <img
                                                 src={data.img}
@@ -256,9 +257,9 @@ const Projects = () => {
                     {!isButtonHidden ? (
                         <Button
                             onClick={toggleOpen}
-                            className=""
+                            className="bg-black flex items-center gap-2"
                         >
-                            show all
+                            show all <FcBinoculars className='text-xl'/>
                         </Button>
                     ) : null}
                 </div>
