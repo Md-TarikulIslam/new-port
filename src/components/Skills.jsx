@@ -2,6 +2,7 @@ import {
     Button,
     Card,
     CardBody,
+    Chip,
     Typography
 
 } from "@material-tailwind/react";
@@ -99,7 +100,18 @@ const allData = [
 export default function Skills() {
     return (
         <div className="max-w-screen-xl mx-auto px-2 lg:px-0 mt-10" id='skills'>
-            <div className="mb-3 text-blue-900">Skills & Experiences</div>
+            {/* <div className="mb-3 text-blue-900">Skills & Experiences</div> */}
+            <div className='w-44 mb-3 '>
+                    <Chip
+                        variant="ghost"
+                        color="black"
+                        size="sm"
+                        value="Skills & Experiences"
+                        icon={
+                            <span className="mx-auto mt-1  block h-2 w-2 rounded-full bg-blue-900 content-[''] " />
+                        }
+                    />
+                </div>
 
             <Card className="bg-gradient-to-r from-cyan-50 to-blue-100">
                 <CardBody >

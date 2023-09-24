@@ -6,7 +6,8 @@ import {
     CardFooter,
     Typography,
     Button,
-    Collapse
+    Collapse,
+    Chip
 } from "@material-tailwind/react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
@@ -213,14 +214,25 @@ const Projects = () => {
     return (
         <div id='projects'>
             <div className="max-w-screen-xl mx-auto px-2 lg:px-0 mt-10">
-                <div className="mb-3 text-blue-900">Projects</div>
+                {/* <div className="mb-3 text-blue-900">Projects</div> */}
+                <div className='w-24 mb-3 '>
+                    <Chip
+                        variant="ghost"
+                        color="black"
+                        size="sm"
+                        value="projects"
+                        icon={
+                            <span className="mx-auto mt-1 block h-2 w-2 rounded-full bg-blue-900 content-[''] " />
+                        }
+                    />
+                </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
                     {
                         ProjectsData.map(data => {
                             return (
                                 <div className='mx-auto'>
-                                    <Card className="mt-6 w-88 hover:shadow-orange-500 hover:shadow-md ">
+                                    <Card className="mt-6 w-88 hover:bg-[#deeaff] hover:shadow-md">
                                         <CardHeader color="blue-gray" className="relative h-56">
                                             <img
                                                 src={data.img}
@@ -272,7 +284,7 @@ const Projects = () => {
                                 allData.map(data => {
                                     return (
                                         <div className='mx-auto'>
-                                            <Card className="mt-6 w-88 hover:shadow-orange-500 hover:shadow-md">
+                                            <Card className="mt-6 w-88 hover:bg-[#deeaff] hover:shadow-md">
                                                 <CardHeader color="blue-gray" className="relative h-56">
                                                     <img
                                                         src={data.img}

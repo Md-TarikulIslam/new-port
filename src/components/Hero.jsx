@@ -17,7 +17,7 @@ const Hero = () => {
                 <CardHeader
                     shadow={false}
                     floated={false}
-                    className="m-0 w-4/5 lg:w-2/5 shrink-0 rounded-r-none flex-1"
+                    className="m-0 w-4/5 lg:w-2/5 shrink-0 rounded-r-none flex-1 bg-transparent"
                 >
                     <img
                         src={img}
