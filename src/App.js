@@ -7,11 +7,11 @@ import Bar from "./components/Bar";
 function App() {
   return (
     <div className="bg-gradient-to-r from-[#f3f6fc] via-blue-100 to-[#f3f6fc] relative">
-      <div className="pt-28">
+      <div className="lg:pt-28 pt-20">
         <Homepage />
       </div>
       <Footer />
-      <Bar />
+      <Bar className="" />
       <ToastContainer />
     </div>
   );
