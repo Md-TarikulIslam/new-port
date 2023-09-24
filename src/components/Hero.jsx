@@ -12,8 +12,8 @@ import { FaGithubAlt } from 'react-icons/fa';
 
 const Hero = () => {
     return (
-        <div className='max-w-screen-xl mx-auto px-2 lg:px-0 ' id='home'>
-            <Card className="w-full mb-10  flex-col lg:flex-row  items-center">
+        <div className="max-w-screen-xl mx-auto px-2 lg:px-0 " id='home'>
+            <Card className="w-full mb-10  flex-col lg:flex-row  items-center bg-[url('https://www.imageshine.in/uploads/gallery/Free-vector-hand-painted-watercolor-abstract-watercolor-background.jpg')] bg-cover bg-center">
                 <CardHeader
                     shadow={false}
                     floated={false}
@@ -29,10 +29,10 @@ const Hero = () => {
                     <Typography variant="h6" color="gray" className="uppercase">
                         hi, i'm
                     </Typography>
-                    <Typography  color="blue-gray" className="my-4 text-4xl lg:text-5xl font-bold">
+                    <Typography color="blue-gray" className="my-4 text-4xl lg:text-5xl font-bold">
                         Md. Tarikul Islam
                     </Typography>
-                    <Typography color="gray" className="mb-4 font-normal">
+                    <Typography color="gray" className="mb-4 font-normal ">
                         Web Developer
                     </Typography>
 
@@ -45,7 +45,7 @@ const Hero = () => {
                     </div>
 
                     <a href="https://drive.google.com/uc?id=1a19KFmNoYVRvmXOH_tv0F9lmeuMVn0rj&export=download"
-                            download><Button className="flex items-center gap-2 mt-4 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
+                        download><Button className="flex items-center gap-2 mt-4 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
 
 
                 </CardBody>

@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@material-tailwind/react";
+import '../src/font/a.ttf'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
