@@ -54,7 +54,7 @@ const ProjectsData = [
         live: "https://nextjs-project-tawny.vercel.app/",
         github: "https://github.com/Md-TarikulIslam/nilmrc-client",
     },
-   
+
     {
         id: 2,
         img: suffix,
@@ -112,7 +112,7 @@ const allData = [
         name: "Apple Website",
         ti: "html5",
         ti2: "css3",
-        ti3:"js",
+        ti3: "js",
         title: "Responsive landing page design",
         live: "https://md-tarikulislam.github.io/pro1/",
         github: "https://github.com/Md-TarikulIslam/pro1",
@@ -123,7 +123,7 @@ const allData = [
         name: "Landing Page",
         ti: "html5",
         ti2: "css3",
-        ti3:"js",
+        ti3: "js",
         title: "Responsive landing page design",
         live: "https://md-tarikulislam.github.io/pro2/",
         github: "https://github.com/Md-TarikulIslam/pro2",
@@ -141,7 +141,7 @@ const allData = [
         live: "https://genius-car-8fe25.web.app",
         github: "https://github.com/Md-TarikulIslam/genius-car-client",
     },
-    
+
     {
         id: 4,
         img: newspaper,
@@ -181,8 +181,8 @@ const allData = [
         live: "https://five-players.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/Select-Players",
     },
-   
-    
+
+
     {
         id: 9,
         img: fitness,
@@ -196,7 +196,7 @@ const allData = [
         live: "https://preeminent-entremet-49bfe8.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/Fitness-Freak",
     },
-    
+
 ]
 
 
@@ -214,12 +214,13 @@ const Projects = () => {
     return (
         <div id='projects'>
             <div className="max-w-screen-xl mx-auto px-2 lg:px-0 mt-10">
-                {/* <div className="mb-3 text-blue-900">Projects</div> */}
-                <div className='w-24 mb-3 '>
+
+                <div className='max-w-min mb-3 '>
                     <Chip
                         variant="ghost"
-                        color="black"
+                        color="blue"
                         size="sm"
+                        className="font tracking-wider"
                         value="projects"
                         icon={
                             <span className="mx-auto mt-1 block h-2 w-2 rounded-full bg-blue-900 content-[''] " />
@@ -271,7 +272,7 @@ const Projects = () => {
                             onClick={toggleOpen}
                             className="bg-black flex items-center gap-2"
                         >
-                            show all <FcBinoculars className='text-xl'/>
+                            show all <FcBinoculars className='text-xl' />
                         </Button>
                     ) : null}
                 </div>

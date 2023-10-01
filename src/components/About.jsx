@@ -10,17 +10,18 @@ import { FcCheckmark, FcIdea, FcNews, FcSupport } from "react-icons/fc";
 export default function About() {
     return (
         <div className="max-w-screen-xl mx-auto px-2 lg:px-0" id="about">
-            <div className='w-24 mb-3 '>
-                    <Chip
-                        variant="ghost"
-                        color="black"
-                        size="sm"
-                        value="about me"
-                        icon={
-                            <span className="mx-auto mt-1  block h-2 w-2 rounded-full bg-blue-900 content-[''] " />
-                        }
-                    />
-                </div>
+            <div className='max-w-min mb-3 '>
+                <Chip
+                    variant="ghost"
+                    color="blue"
+                    size="sm"
+                    className="font tracking-wider"
+                    value="about me"
+                    icon={
+                        <span className="mx-auto mt-1  block h-2 w-2 rounded-full bg-blue-900 content-[''] " />
+                    }
+                />
+            </div>
 
             <figure className="relative h-full w-full ">
                 <img
