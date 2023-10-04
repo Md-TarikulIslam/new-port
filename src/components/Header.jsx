@@ -91,7 +91,12 @@ export default function Header() {
     return (
         <Navbar className="mx-auto max-w-screen-3xl py-1 px-4 lg:px-8 lg:py-4  rounded-none fixed top-0 z-20">
             <div className="container max-w-screen-xl mx-auto flex items-center justify-between text-blue-gray-900">
-                <a href="#home"> <img className="w-28 lg:w-40" src={logo} alt="" /></a>
+                <a href="#home"> <img 
+                // className="w-28 lg:w-40" 
+                className={`cursor-pointer w-28 lg:w-40 ${selectedItem === 'item0' ? '' : ''
+                    }`}
+                onClick={() => handleItemClick('item0')}
+                src={logo} alt="" /></a>
 
                 <div className="hidden lg:block">{navList}</div>
             </div>
