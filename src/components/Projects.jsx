@@ -34,10 +34,10 @@ const ProjectsData = [
         name: "National Institute of Laboratory Medicine & Referral Centre",
         title:
             "This is a Government project. There are many landing pages and many official information is there.",
-        ti: "react",
-        ti2: "tailwindcss",
-        ti3: "express",
-        ti4: "mongodb",
+        ti: "react JS",
+        ti2: "tailwindCSS",
+        ti3: "express JS",
+        ti4: "mongoDB",
         live: "https://nil-mrc.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/nilmrc-client",
     },
@@ -47,10 +47,10 @@ const ProjectsData = [
         name: "Connect",
         title:
             "This is a social media app, you can post and accept requests. Connect with your favorite person",
-        ti: "nextjs",
-        ti2: "tailwindcss",
-        ti3: "express",
-        ti4: "mongodb",
+        ti: "next JS",
+        ti2: "tailwindCSS",
+        ti3: "express JS",
+        ti4: "mongoDB",
         live: "https://nextjs-project-tawny.vercel.app/",
         github: "https://github.com/Md-TarikulIslam/nilmrc-client",
     },
@@ -60,8 +60,9 @@ const ProjectsData = [
         img: suffix,
         name: "Suffix IT Limited",
         ti: "react",
-        ti2: "react bootstrap",
-        ti3: "css3",
+        ti2: "Bootstrap",
+        ti3: "CSS3",
+        ti4: "Swiper JS",
         title: "Suffix IT Limited is a IT service company with various program. Many landing pages design.",
 
         live: "https://suffix-it.netlify.app/",
@@ -79,7 +80,7 @@ const allData = [
         title: "Tori Limited is a IT service company with various program",
         ti2: "TailwindCSS",
         ti3: "CSS3",
-        ti: "React",
+        ti: "React JS",
         live: "https://tori-lim.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/tori-limited",
     },
@@ -87,9 +88,9 @@ const allData = [
         id: 7,
         img: quiz,
         name: "Quiz",
-        ti: "html5",
-        ti2: "css3",
-        ti3: "js",
+        ti: "HTML5",
+        ti2: "CSS3",
+        ti3: "JS",
         title: "Quiz app with timer functionality",
 
         live: "https://quiz-tarikul.netlify.app/",
@@ -99,9 +100,9 @@ const allData = [
         id: 8,
         img: keep,
         name: "Keep",
-        ti: "html5",
-        ti2: "css3",
-        ti3: "js",
+        ti: "HTML5",
+        ti2: "CSS3",
+        ti3: "JS",
         title: "Keep app is for keep your daily notes.",
         live: "https://tarikul-keep.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/keep",
@@ -110,9 +111,9 @@ const allData = [
         id: 10,
         img: pro1,
         name: "Apple Website",
-        ti: "html5",
-        ti2: "css3",
-        ti3: "js",
+        ti: "HTML5",
+        ti2: "CSS3",
+        ti3: "JS",
         title: "Responsive landing page design",
         live: "https://md-tarikulislam.github.io/pro1/",
         github: "https://github.com/Md-TarikulIslam/pro1",
@@ -121,9 +122,9 @@ const allData = [
         id: 11,
         img: pro2,
         name: "Landing Page",
-        ti: "html5",
-        ti2: "css3",
-        ti3: "js",
+        ti: "HTML5",
+        ti2: "CSS3",
+        ti3: "JS",
         title: "Responsive landing page design",
         live: "https://md-tarikulislam.github.io/pro2/",
         github: "https://github.com/Md-TarikulIslam/pro2",
@@ -136,8 +137,8 @@ const allData = [
             "Car service is a project with MongoDB, you can check various car service method here",
         ti2: "tailwindcss",
         ti: "react",
-        ti3: "express.js",
-        ti4: "mongodb",
+        ti3: "express JS",
+        ti4: "mongoDB",
         live: "https://genius-car-8fe25.web.app",
         github: "https://github.com/Md-TarikulIslam/genius-car-client",
     },
@@ -146,8 +147,8 @@ const allData = [
         id: 4,
         img: newspaper,
         name: "NewsPaper",
-        ti2: "react bootstrap",
-        ti3: "css3",
+        ti2: "Bootstrap",
+        ti3: "CSS3",
         ti: "react",
         ti4: "firebase",
         title: "Newspaper is a website with authentication and daily news.",
@@ -158,8 +159,8 @@ const allData = [
         id: 5,
         img: shop,
         name: "Shopping Website",
-        ti2: "react bootstrap",
-        ti3: "css3",
+        ti2: "Bootstrap",
+        ti3: "CSS3",
         ti: "react",
         ti4: "firebase",
         title: "This is a web site where you can select products and give order",
@@ -171,10 +172,10 @@ const allData = [
         id: 6,
         img: player,
         name: "Best Player",
-        ti: "html5",
-        ti2: "react bootstrap",
-        ti3: "css3",
-        ti4: "js",
+        ti: "HTML5",
+        ti2: "Bootstrap",
+        ti3: "CSS3",
+        ti4: "JS",
         title:
             "Select best 5 players for your upcoming match and also count their expenses.",
 
@@ -187,9 +188,9 @@ const allData = [
         id: 9,
         img: fitness,
         name: "Fitness Freak",
-        ti: "html5",
-        ti2: "css3",
-        ti3: "js",
+        ti: "HTML5",
+        ti2: "CSS3",
+        ti3: "JS",
 
         title: "You can count your exercise daily for good health.",
 
@@ -233,7 +234,7 @@ const Projects = () => {
                         ProjectsData.map(data => {
                             return (
                                 <div className='mx-auto'>
-                                    <Card className="mt-6 w-88 hover:bg-[#deeaff] hover:shadow-md">
+                                    <Card className="mt-6 w-88 hover:bg-transparent hover:shadow-md">
                                         <CardHeader color="blue-gray" className="relative h-56">
                                             <img
                                                 src={data.img}
@@ -249,13 +250,13 @@ const Projects = () => {
                                                 {data.title}
                                             </Typography>
                                             <div className='h-8'>
-                                                <p className='text-black'>Technology: <span className='uppercase text-orange-600'>{data.ti}, {data.ti2}, {data.ti3}, {data.ti4}</span></p>
+                                                <p className='text-black'>Technology: <span className='capitalize text-blue-900'>{data.ti}, {data.ti2}, {data.ti3}, {data.ti4}</span></p>
                                             </div>
                                         </CardBody>
                                         <CardFooter className="pt-0 ">
                                             <div className='flex items-center justify-center gap-3'>
-                                                <a target='_blank' href={data.github}><Button className='p-1 bg-blue-900'><FaGithub className='text-4xl' /> </Button></a>
-                                                <a target='_blank' href={data.live}><Button className='p-1 bg-blue-900'><FaGlobe className='text-4xl' /> </Button></a>
+                                                <a target='_blank' href={data.github}><Button className='p-1 bg-black'><FaGithub className='text-4xl' /> </Button></a>
+                                                <a target='_blank' href={data.live}><Button className='p-1 bg-black'><FaGlobe className='text-4xl' /> </Button></a>
                                             </div>
 
                                         </CardFooter>
@@ -285,35 +286,35 @@ const Projects = () => {
                                 allData.map(data => {
                                     return (
                                         <div className='mx-auto'>
-                                            <Card className="mt-6 w-88 hover:bg-[#deeaff] hover:shadow-md">
-                                                <CardHeader color="blue-gray" className="relative h-56">
-                                                    <img
-                                                        src={data.img}
-                                                        alt="card-image"
-                                                        className='object-cover w-full h-full'
-                                                    />
-                                                </CardHeader>
-                                                <CardBody>
-                                                    <Typography variant="h5" color="blue-gray" className=" h-16">
-                                                        {data.name}
-                                                    </Typography>
-                                                    <Typography className='h-20'>
-                                                        {data.title}
-                                                    </Typography>
-                                                    <div className='h-8'>
-                                                        <p className='text-black'>Technology: <span className='uppercase text-orange-600'>{data.ti}, {data.ti2}, {data.ti3}, {data.ti4}</span></p>
-                                                    </div>
-                                                </CardBody>
-                                                <CardFooter className="pt-0 ">
-                                                    <div className='flex items-center justify-center gap-3'>
-                                                        <a target='_blank' href={data.github}><Button className='p-1 bg-blue-900'><FaGithub className='text-4xl' /> </Button></a>
-                                                        <a target='_blank' href={data.live}><Button className='p-1 bg-blue-900'><FaGlobe className='text-4xl' /> </Button></a>
-                                                    </div>
+                                    <Card className="mt-6 w-88 hover:bg-transparent hover:shadow-md">
+                                        <CardHeader color="blue-gray" className="relative h-56">
+                                            <img
+                                                src={data.img}
+                                                alt="card-image"
+                                                className='object-cover w-full h-full'
+                                            />
+                                        </CardHeader>
+                                        <CardBody>
+                                            <Typography variant="h5" color="blue-gray" className=" h-16">
+                                                {data.name}
+                                            </Typography>
+                                            <Typography className='h-20'>
+                                                {data.title}
+                                            </Typography>
+                                            <div className='h-8'>
+                                                <p className='text-black'>Technology: <span className='capitalize text-blue-900'>{data.ti}, {data.ti2}, {data.ti3}, {data.ti4}</span></p>
+                                            </div>
+                                        </CardBody>
+                                        <CardFooter className="pt-0 ">
+                                            <div className='flex items-center justify-center gap-3'>
+                                                <a target='_blank' href={data.github}><Button className='p-1 bg-black'><FaGithub className='text-4xl' /> </Button></a>
+                                                <a target='_blank' href={data.live}><Button className='p-1 bg-black'><FaGlobe className='text-4xl' /> </Button></a>
+                                            </div>
 
-                                                </CardFooter>
+                                        </CardFooter>
 
-                                            </Card>
-                                        </div>
+                                    </Card>
+                                </div>
                                     )
                                 })
                             }
