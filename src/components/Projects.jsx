@@ -34,10 +34,20 @@ const ProjectsData = [
         name: "National Institute of Laboratory Medicine & Referral Centre",
         title:
             "This is a Government project. There are many landing pages and many official information is there.",
-        ti: "react JS",
-        ti2: "tailwindCSS",
-        ti3: "express JS",
-        ti4: "mongoDB",
+        tech: [
+            {
+                t: "ReactJS"
+            },
+            {
+                t: "tailwindCSS"
+            },
+            {
+                t: "expressJS"
+            },
+            {
+                t: "mongoDB"
+            },
+        ],
         live: "https://nil-mrc.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/nilmrc-client",
     },
@@ -47,10 +57,20 @@ const ProjectsData = [
         name: "Connect",
         title:
             "This is a social media app, you can post and accept requests. Connect with your favorite person",
-        ti: "next JS",
-        ti2: "tailwindCSS",
-        ti3: "express JS",
-        ti4: "mongoDB",
+        tech: [
+            {
+                t: "nextjs"
+            },
+            {
+                t: "tailwindCSS"
+            },
+            {
+                t: "expressJS"
+            },
+            {
+                t: "mongoDB"
+            },
+        ],
         live: "https://nextjs-project-tawny.vercel.app/",
         github: "https://github.com/Md-TarikulIslam/nilmrc-client",
     },
@@ -59,10 +79,21 @@ const ProjectsData = [
         id: 2,
         img: suffix,
         name: "Suffix IT Limited",
-        ti: "react",
-        ti2: "Bootstrap",
-        ti3: "CSS3",
-        ti4: "Swiper JS",
+        tech: [
+            {
+                t: "ReactJS"
+            },
+            {
+                t: "css3"
+            },
+            {
+                t: "Bootstrap"
+            },
+            {
+                t: "swiperjs"
+            },
+        ],
+
         title: "Suffix IT Limited is a IT service company with various program. Many landing pages design.",
 
         live: "https://suffix-it.netlify.app/",
@@ -78,9 +109,18 @@ const allData = [
         img: tori,
         name: "Tori Limited",
         title: "Tori Limited is a IT service company with various program",
-        ti2: "TailwindCSS",
-        ti3: "CSS3",
-        ti: "React JS",
+        tech: [
+            {
+                t: "ReactJS"
+            },
+            {
+                t: "css3"
+            },
+            {
+                t: "tailwindcss"
+            },
+           
+        ],
         live: "https://tori-lim.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/tori-limited",
     },
@@ -88,9 +128,19 @@ const allData = [
         id: 7,
         img: quiz,
         name: "Quiz",
-        ti: "HTML5",
-        ti2: "CSS3",
-        ti3: "JS",
+        tech: [
+            {
+                t: "html5"
+            },
+            {
+                t: "css3"
+            },
+            {
+                t: "js"
+            },
+          
+        ],
+     
         title: "Quiz app with timer functionality",
 
         live: "https://quiz-tarikul.netlify.app/",
@@ -100,9 +150,19 @@ const allData = [
         id: 8,
         img: keep,
         name: "Keep",
-        ti: "HTML5",
-        ti2: "CSS3",
-        ti3: "JS",
+        tech: [
+            {
+                t: "html5"
+            },
+            {
+                t: "css3"
+            },
+            {
+                t: "js"
+            },
+        
+        ],
+
         title: "Keep app is for keep your daily notes.",
         live: "https://tarikul-keep.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/keep",
@@ -111,9 +171,19 @@ const allData = [
         id: 10,
         img: pro1,
         name: "Apple Website",
-        ti: "HTML5",
-        ti2: "CSS3",
-        ti3: "JS",
+        tech: [
+            {
+                t: "html5"
+            },
+            {
+                t: "css3"
+            },
+            {
+                t: "js"
+            },
+        
+        ],
+     
         title: "Responsive landing page design",
         live: "https://md-tarikulislam.github.io/pro1/",
         github: "https://github.com/Md-TarikulIslam/pro1",
@@ -122,9 +192,19 @@ const allData = [
         id: 11,
         img: pro2,
         name: "Landing Page",
-        ti: "HTML5",
-        ti2: "CSS3",
-        ti3: "JS",
+        tech: [
+            {
+                t: "html5"
+            },
+            {
+                t: "css3"
+            },
+            {
+                t: "js"
+            },
+        
+        ],
+
         title: "Responsive landing page design",
         live: "https://md-tarikulislam.github.io/pro2/",
         github: "https://github.com/Md-TarikulIslam/pro2",
@@ -135,10 +215,21 @@ const allData = [
         name: "Car Service",
         title:
             "Car service is a project with MongoDB, you can check various car service method here",
-        ti2: "tailwindcss",
-        ti: "react",
-        ti3: "express JS",
-        ti4: "mongoDB",
+            tech: [
+                {
+                    t: "reactjs"
+                },
+                {
+                    t: "tailwindcss"
+                },
+                {
+                    t: "expressJS"
+                },
+                {
+                    t: "mongodb"
+                },
+            
+            ],
         live: "https://genius-car-8fe25.web.app",
         github: "https://github.com/Md-TarikulIslam/genius-car-client",
     },
@@ -147,10 +238,21 @@ const allData = [
         id: 4,
         img: newspaper,
         name: "NewsPaper",
-        ti2: "Bootstrap",
-        ti3: "CSS3",
-        ti: "react",
-        ti4: "firebase",
+        tech: [
+            {
+                t: "reactjs"
+            },
+            {
+                t: "Bootstrap"
+            },
+            {
+                t: "CSS3"
+            },
+            {
+                t: "firebase"
+            },
+        
+        ],
         title: "Newspaper is a website with authentication and daily news.",
         live: "https://newspaper-e362f.web.app/",
         github: "https://github.com/Md-TarikulIslam/newspaper-client",
@@ -159,10 +261,22 @@ const allData = [
         id: 5,
         img: shop,
         name: "Shopping Website",
-        ti2: "Bootstrap",
-        ti3: "CSS3",
-        ti: "react",
-        ti4: "firebase",
+        tech: [
+            {
+                t: "reactjs"
+            },
+            {
+                t: "Bootstrap"
+            },
+            {
+                t: "CSS3"
+            },
+            {
+                t: "firebase"
+            },
+        
+        ],
+
         title: "This is a web site where you can select products and give order",
 
         live: "https://tarikul-shop.netlify.app/",
@@ -172,10 +286,22 @@ const allData = [
         id: 6,
         img: player,
         name: "Best Player",
-        ti: "HTML5",
-        ti2: "Bootstrap",
-        ti3: "CSS3",
-        ti4: "JS",
+        tech: [
+            {
+                t: "html5"
+            },
+            {
+                t: "css3"
+            },
+            {
+                t: "bootstrap"
+            },
+            {
+                t: "js"
+            },
+        
+        ],
+
         title:
             "Select best 5 players for your upcoming match and also count their expenses.",
 
@@ -188,9 +314,20 @@ const allData = [
         id: 9,
         img: fitness,
         name: "Fitness Freak",
-        ti: "HTML5",
-        ti2: "CSS3",
-        ti3: "JS",
+        tech: [
+            {
+                t: "html5"
+            },
+            {
+                t: "css3"
+            },
+            {
+                t: "js"
+            },
+           
+        
+        ],
+     
 
         title: "You can count your exercise daily for good health.",
 
@@ -234,12 +371,12 @@ const Projects = () => {
                         ProjectsData.map(data => {
                             return (
                                 <div className='mx-auto'>
-                                    <Card className="mt-6 w-88 hover:bg-transparent hover:shadow-md">
+                                    <Card className="mt-6 w-88 group">
                                         <CardHeader color="blue-gray" className="relative h-56">
                                             <img
                                                 src={data.img}
                                                 alt="card-image"
-                                                className='object-cover w-full h-full'
+                                                className='object-cover w-full h-full group-hover:scale-110 transition-all'
                                             />
                                         </CardHeader>
                                         <CardBody>
@@ -249,8 +386,23 @@ const Projects = () => {
                                             <Typography className='h-20'>
                                                 {data.title}
                                             </Typography>
-                                            <div className='h-8'>
-                                                <p className='text-black'>Technology: <span className='capitalize text-blue-900'>{data.ti}, {data.ti2}, {data.ti3}, {data.ti4}</span></p>
+                                            <div className='grid grid-cols-2 gap-2'>
+                                                {
+                                                    data.tech.map((d, idx) => {
+                                                        return (
+                                                            <div key={idx} className=''>
+                                                                <Chip
+                                                                    variant="ghost"
+                                                                    color="blue"
+                                                                    size="sm"
+                                                                    className="font tracking-wider flex justify-center items-center h-full w-full"
+                                                                    value={d.t}
+
+                                                                />
+                                                            </div>
+                                                        )
+                                                    })
+                                                }
                                             </div>
                                         </CardBody>
                                         <CardFooter className="pt-0 ">
@@ -281,17 +433,17 @@ const Projects = () => {
 
                     <Collapse open={open} className='mb-10'>
 
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-0'>
-                            {
-                                allData.map(data => {
-                                    return (
-                                        <div className='mx-auto'>
-                                    <Card className="mt-6 w-88 hover:bg-transparent hover:shadow-md">
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
+                    {
+                        allData.map(data => {
+                            return (
+                                <div className='mx-auto'>
+                                    <Card className="mt-6 w-88 group">
                                         <CardHeader color="blue-gray" className="relative h-56">
                                             <img
                                                 src={data.img}
                                                 alt="card-image"
-                                                className='object-cover w-full h-full'
+                                                className='object-cover w-full h-full group-hover:scale-110 transition-all'
                                             />
                                         </CardHeader>
                                         <CardBody>
@@ -301,8 +453,23 @@ const Projects = () => {
                                             <Typography className='h-20'>
                                                 {data.title}
                                             </Typography>
-                                            <div className='h-8'>
-                                                <p className='text-black'>Technology: <span className='capitalize text-blue-900'>{data.ti}, {data.ti2}, {data.ti3}, {data.ti4}</span></p>
+                                            <div className='grid grid-cols-2 gap-2'>
+                                                {
+                                                    data.tech.map((d, idx) => {
+                                                        return (
+                                                            <div key={idx} className=''>
+                                                                <Chip
+                                                                    variant="ghost"
+                                                                    color="blue"
+                                                                    size="sm"
+                                                                    className="font tracking-wider flex justify-center items-center h-full w-full"
+                                                                    value={d.t}
+
+                                                                />
+                                                            </div>
+                                                        )
+                                                    })
+                                                }
                                             </div>
                                         </CardBody>
                                         <CardFooter className="pt-0 ">
@@ -315,10 +482,10 @@ const Projects = () => {
 
                                     </Card>
                                 </div>
-                                    )
-                                })
-                            }
-                        </div>
+                            )
+                        })
+                    }
+                </div>
                     </Collapse>
                 </div>
 
