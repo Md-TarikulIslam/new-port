@@ -8,7 +8,7 @@ const Footer = () => {
                 <p className='text-center font-bold text-lg lg:text-2xl font'>Md. Tarikul Islam</p>
                 <div className='flex w-96 justify-center mt-2 lg:mt-5 mx-auto gap-1 lg:gap-2 pb-8 lg:pb-0'>
                     <a target='_blank' href="https://www.facebook.com/alwaysnayon"><FaFacebookF className='text-3xl rounded-lg  lg:text-4xl hover:shadow-white shadow-sm bg-white p-2 transition   ease-in-out' /></a>
-                    <a target='_blank' href="https://www.linkedin.com/in/md-tarikul-islam-871134289/"> <FaLinkedinIn className='text-3xl lg:text-4xl rounded-lg hover:shadow-white shadow-sm bg-white p-2 transition   ease-in-out' /></a>
+                    <a target='_blank' href="https://www.linkedin.com/in/md-tarikul-islam-0ba0142a1"> <FaLinkedinIn className='text-3xl lg:text-4xl rounded-lg hover:shadow-white shadow-sm bg-white p-2 transition   ease-in-out' /></a>
                     <a target='_blank' href="https://twitter.com/tarikul_nayon"><FaTwitter className='text-3xl rounded-lg lg:text-4xl hover:shadow-white shadow-sm bg-white p-2 transition   ease-in-out' /></a>
                     <a target='_blank' href="https://github.com/Md-TarikulIslam"> <FaGithubAlt className='text-3xl lg:text-4xl rounded-lg hover:shadow-white shadow-sm bg-white p-2 transition   ease-in-out' /></a>
                 </div>

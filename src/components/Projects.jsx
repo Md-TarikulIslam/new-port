@@ -48,8 +48,8 @@ const ProjectsData = [
                 t: "mongoDB"
             },
         ],
-        live: "https://nil-mrc.netlify.app/",
-        github: "https://github.com/Md-TarikulIslam/nilmrc-client",
+        live: "https://main.d3k4uhf97xt2iw.amplifyapp.com/",
+        github: "",
     },
     {
         id: 1,
@@ -72,7 +72,7 @@ const ProjectsData = [
             },
         ],
         live: "https://nextjs-project-tawny.vercel.app/",
-        github: "https://github.com/Md-TarikulIslam/nilmrc-client",
+        github: "",
     },
 
     {
@@ -99,11 +99,6 @@ const ProjectsData = [
         live: "https://suffix-it.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/suffix_it",
     },
-
-
-];
-
-const allData = [
     {
         id: 3,
         img: tori,
@@ -335,7 +330,10 @@ const allData = [
         github: "https://github.com/Md-TarikulIslam/Fitness-Freak",
     },
 
-]
+
+];
+
+
 
 
 
@@ -343,12 +341,12 @@ const Projects = () => {
     const [open, setOpen] = useState(false);
     const [isButtonHidden, setIsButtonHidden] = useState(false);
 
-
     const toggleOpen = () => {
-        setOpen((cur) => !cur)
+        setOpen(!open);
         setIsButtonHidden(true);
-
     };
+
+    const visibleProjects = open ? ProjectsData : ProjectsData.slice(0, 3);
     return (
         <div id='projects'>
             <div className="max-w-screen-xl mx-auto px-2 lg:px-0 mt-10">
@@ -366,9 +364,9 @@ const Projects = () => {
                     />
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-8'>
                     {
-                        ProjectsData.map(data => {
+                        visibleProjects.map(data => {
                             return (
                                 <div className='mx-auto'>
                                     <Card className="mt-6 w-88 group">
@@ -405,7 +403,7 @@ const Projects = () => {
                                                 }
                                             </div>
                                         </CardBody>
-                                        <CardFooter className="pt-0 ">
+                                        <CardFooter className="pt-0">
                                             <div className='flex items-center justify-center gap-3'>
                                                 <a target='_blank' href={data.github}><Button className='p-1 bg-black'><FaGithub className='text-4xl' /> </Button></a>
                                                 <a target='_blank' href={data.live}><Button className='p-1 bg-black'><FaGlobe className='text-4xl' /> </Button></a>
@@ -419,74 +417,15 @@ const Projects = () => {
                         })
                     }
                 </div>
-                <div className='flex justify-center mt-4'>
-                    {!isButtonHidden ? (
-                        <Button
-                            onClick={toggleOpen}
-                            className="bg-black flex items-center gap-2"
-                        >
-                            show all <FcBinoculars className='text-xl' />
+                {!open && !isButtonHidden && (
+                    <div className="mb-8 -mt-4">
+                        <Button onClick={toggleOpen} className='bg-black flex items-center gap-2 mx-auto'>
+                            Show all <FcBinoculars className='text-xl' />
                         </Button>
-                    ) : null}
-                </div>
+                    </div>
+                )}
                 <div>
 
-                    <Collapse open={open} className='mb-10'>
-
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
-                    {
-                        allData.map(data => {
-                            return (
-                                <div className='mx-auto'>
-                                    <Card className="mt-6 w-88 group">
-                                        <CardHeader color="blue-gray" className="relative h-56">
-                                            <img
-                                                src={data.img}
-                                                alt="card-image"
-                                                className='object-cover w-full h-full group-hover:scale-110 transition-all'
-                                            />
-                                        </CardHeader>
-                                        <CardBody>
-                                            <Typography variant="h5" color="blue-gray" className=" h-16">
-                                                {data.name}
-                                            </Typography>
-                                            <Typography className='h-20'>
-                                                {data.title}
-                                            </Typography>
-                                            <div className='grid grid-cols-2 gap-2'>
-                                                {
-                                                    data.tech.map((d, idx) => {
-                                                        return (
-                                                            <div key={idx} className=''>
-                                                                <Chip
-                                                                    variant="ghost"
-                                                                    color="blue"
-                                                                    size="sm"
-                                                                    className="font tracking-wider flex justify-center items-center h-full w-full"
-                                                                    value={d.t}
-
-                                                                />
-                                                            </div>
-                                                        )
-                                                    })
-                                                }
-                                            </div>
-                                        </CardBody>
-                                        <CardFooter className="pt-0 ">
-                                            <div className='flex items-center justify-center gap-3'>
-                                                <a target='_blank' href={data.github}><Button className='p-1 bg-black'><FaGithub className='text-4xl' /> </Button></a>
-                                                <a target='_blank' href={data.live}><Button className='p-1 bg-black'><FaGlobe className='text-4xl' /> </Button></a>
-                                            </div>
-
-                                        </CardFooter>
-
-                                    </Card>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-                    </Collapse>
                 </div>
 
             </div>
