@@ -1,10 +1,9 @@
-import React, { useState } from "react";
 import {
     Navbar,
     Typography
-
 } from "@material-tailwind/react";
-import logo from '../assets/image/logo.png'
+import React, { useState } from "react";
+import logo from '../assets/image/logo.png';
 
 export default function Header() {
     const [openNav, setOpenNav] = useState(false);
@@ -27,7 +26,7 @@ export default function Header() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black ${selectedItem === 'item1' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item1' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item1')}
             >
@@ -39,7 +38,7 @@ export default function Header() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black ${selectedItem === 'item2' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item2' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item2')}
             >
@@ -51,7 +50,7 @@ export default function Header() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black ${selectedItem === 'item3' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item3' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item3')}
             >
@@ -63,7 +62,7 @@ export default function Header() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black ${selectedItem === 'item4' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item4' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item4')}
             >
@@ -75,7 +74,7 @@ export default function Header() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black ${selectedItem === 'item5' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item5' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item5')}
             >
@@ -85,18 +84,15 @@ export default function Header() {
             </Typography></a>
         </ul>
     );
-
-
-
     return (
         <Navbar className="mx-auto max-w-screen-3xl py-1 px-4 lg:px-8 lg:py-4  rounded-none fixed top-0 z-20">
             <div className="container max-w-screen-xl mx-auto flex items-center justify-between text-blue-gray-900">
-                <a href="#home"> <img 
-                // className="w-28 lg:w-40" 
-                className={`cursor-pointer w-28 lg:w-40 ${selectedItem === 'item0' ? '' : ''
-                    }`}
-                onClick={() => handleItemClick('item0')}
-                src={logo} alt="" /></a>
+                <a href="#home"> <img
+                    // className="w-28 lg:w-40" 
+                    className={`cursor-pointer w-28 lg:w-40 ${selectedItem === 'item0' ? '' : ''
+                        }`}
+                    onClick={() => handleItemClick('item0')}
+                    src={logo} alt="" /></a>
 
                 <div className="hidden lg:block">{navList}</div>
             </div>

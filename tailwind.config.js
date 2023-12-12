@@ -9,7 +9,7 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        OpenSans: ["Open Sans", 'sans-serif'],
+        sans: ["Helvetica", 'sans-serif'],
       },
     },
   },

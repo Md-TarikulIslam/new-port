@@ -1,14 +1,14 @@
-import React from 'react'
-import img from '../assets/image/pro.png'
 import {
-    Card,
-    CardHeader,
-    CardBody,
-    Typography,
     Button,
+    Card,
+    CardBody,
+    CardHeader,
+    Typography,
 } from "@material-tailwind/react";
-import { FcFeedback, FcNews, FcPhoneAndroid } from 'react-icons/fc';
+import React from 'react';
 import { FaGithubAlt } from 'react-icons/fa';
+import { FcFeedback, FcNews, FcPhoneAndroid } from 'react-icons/fc';
+import img from '../assets/image/pro.png';
 
 const Hero = () => {
     return (
@@ -29,7 +29,7 @@ const Hero = () => {
                     <Typography variant="h6" color="gray" className="uppercase">
                         hi, i'm
                     </Typography>
-                    <Typography color="blue-gray" className="my-4 text-4xl lg:text-5xl font-bold">
+                    <Typography color="blue-gray" className="my-4 text-4xl uppercase lg:text-5xl font-bold">
                         Md. Tarikul Islam
                     </Typography>
                     <Typography color="gray" className="mb-4 font-normal ">
@@ -45,9 +45,7 @@ const Hero = () => {
                     </div>
 
                     <a href="https://drive.google.com/uc?id=1a19KFmNoYVRvmXOH_tv0F9lmeuMVn0rj&export=download"
-                        download><Button className="flex items-center gap-2 mt-4 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
-
-
+                        download><Button className="flex tracking-widest items-center gap-2 mt-4 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
                 </CardBody>
             </Card>
         </div>

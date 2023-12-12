@@ -25,11 +25,11 @@ code {
 }
 
 @font-face {
-  font-family: "Dot";
-  src: local("Dot"), url("../src/font/a.ttf") format("truetype");
+  font-family: "Helvetica";
+  src: local("Helvetica"), url("../src/font/Helvetica.ttf") format("truetype");
   font-weight: normal;
 }
 
-.dot {
-  font-family: "Dot";
+.Helvetica {
+  font-family: "Helvetica";
 }

@@ -1,11 +1,10 @@
 import {
-    Tabs,
-    TabsHeader,
-    TabsBody,
     Tab,
-    TabPanel,
+    Tabs,
+    TabsBody,
+    TabsHeader
 } from "@material-tailwind/react";
-import { FcHome, FcAbout, FcBriefcase, FcSupport, FcFeedback } from "react-icons/fc";
+import { FcAbout, FcBriefcase, FcFeedback, FcHome, FcSupport } from "react-icons/fc";
 
 export default function Bar() {
     const data = [
@@ -49,12 +48,12 @@ export default function Bar() {
     ];
 
     return (
-         <Tabs id="custom-animation" value="html" className="lg:hidden w-full mx-auto bg-blue-900 fixed  bottom-0 ">
+        <Tabs id="custom-animation" value="html" className="lg:hidden w-full mx-auto bg-blue-900 fixed  bottom-0 ">
             <TabsHeader className=" bg-blue-900 " indicatorProps={{
                 className: "bg-blue-700 bg-opacity-80",
             }}>
-                {data.map(({ label, value, icon }) => (
-                    <a className="w-full" href={value}>
+                {data.map(({ label, value, icon, index }) => (
+                    <a className="w-full" href={value} key={index + 1}>
                         <Tab key={value} value={value} className="text-sm text-white bg-blue-900">
                             <p href={value} className="text-2xl">{icon}</p>
                         </Tab>

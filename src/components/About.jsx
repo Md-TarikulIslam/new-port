@@ -2,10 +2,9 @@ import {
     Button,
     Chip,
     Typography
-
 } from "@material-tailwind/react";
-import img from '../assets/image/com.jpg'
 import { FcCheckmark, FcIdea, FcNews, FcSupport } from "react-icons/fc";
+import img from '../assets/image/com.jpg';
 
 export default function About() {
     return (
@@ -32,21 +31,21 @@ export default function About() {
                 <figcaption className="absolute bottom-8 left-2/4 flex w-full lg:w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-4 px-2  lg:px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
                     <div className="">
                         <div className="flex gap-3 justify-center lg:justify-start">
-                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-orange-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-orange-900 hover:text-gray-300">
+                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-blue-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-blue-900 hover:text-gray-300">
                                 <Typography><FcIdea className="text-3xl" /> </Typography>
                                 <Typography className="my-2 font-bold">
                                     Experience
                                 </Typography>
                                 <Typography className="text-xs">1 Year Working</Typography>
                             </div>
-                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-orange-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-orange-900 hover:text-gray-300">
+                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-blue-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-blue-900 hover:text-gray-300">
                                 <Typography><FcCheckmark className="text-3xl" /> </Typography>
                                 <Typography className="my-2 font-bold">
                                     Completed
                                 </Typography>
                                 <Typography className="text-sm">13+ Projects</Typography>
                             </div>
-                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-orange-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-orange-900 hover:text-gray-300">
+                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-blue-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-blue-900 hover:text-gray-300">
                                 <Typography><FcSupport className="text-3xl" /> </Typography>
                                 <Typography className="my-2 font-bold">
                                     Support
@@ -67,7 +66,7 @@ export default function About() {
                             Overall, I am confident that my skills, experience, combined with my technical skills, and strong work ethic, make me an ideal candidate for any web development role. I am excited about the opportunities that lie ahead and look forward to making valuable contributions to any team.
                         </Typography>
                         <a href="https://drive.google.com/uc?id=1a19KFmNoYVRvmXOH_tv0F9lmeuMVn0rj&export=download"
-                            download><Button className="flex items-center gap-2 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
+                            download><Button className="flex tracking-widest items-center gap-2 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
                     </div>
 
                 </figcaption>

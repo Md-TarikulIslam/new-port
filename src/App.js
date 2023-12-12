@@ -1,5 +1,4 @@
 import { ToastContainer } from "react-toastify";
-import "./App.css";
 import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
 import Bar from "./components/Bar";

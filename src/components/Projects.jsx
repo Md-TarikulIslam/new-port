@@ -1,33 +1,55 @@
-import React, { useState } from 'react'
 import {
+    Button,
     Card,
-    CardHeader,
     CardBody,
     CardFooter,
-    Typography,
-    Button,
-    Collapse,
-    Chip
+    CardHeader,
+    Chip,
+    Typography
 } from "@material-tailwind/react";
-import { FaGithub, FaGlobe } from "react-icons/fa";
+import React, { useState } from 'react';
 
+import { FcBinoculars, FcLink } from 'react-icons/fc';
+import player from "../assets/image/pro_img/10player.png";
+import fitness from "../assets/image/pro_img/11fitness.png";
+import nilmrc from "../assets/image/pro_img/12nilmrc.png";
+import connect from "../assets/image/pro_img/13connect.png";
+import patagonia from "../assets/image/pro_img/15.png";
 import suffix from "../assets/image/pro_img/1suffix.png";
 import tori from "../assets/image/pro_img/2tori.png";
-import pro1 from "../assets/image/pro_img/4pro1.png";
 import pro2 from "../assets/image/pro_img/3.weather.png";
+import pro1 from "../assets/image/pro_img/4pro1.png";
 import quiz from "../assets/image/pro_img/5quiz.png";
 import keep from "../assets/image/pro_img/6keep.png";
 import shop from "../assets/image/pro_img/7shop.png";
 import newspaper from "../assets/image/pro_img/8news.png";
 import car from "../assets/image/pro_img/a.png";
-import player from "../assets/image/pro_img/10player.png";
-import fitness from "../assets/image/pro_img/11fitness.png";
-import nilmrc from "../assets/image/pro_img/12nilmrc.png";
-import connect from "../assets/image/pro_img/13connect.png";
-import { FcBinoculars } from 'react-icons/fc';
 
 
 const ProjectsData = [
+    {
+        id: 15,
+        img: patagonia,
+        name: "Patagonia Explore",
+        title:
+            "This is a project for a travel guider. There are many landing pages and many information's are there.",
+        tech: [
+            {
+                t: "ReactJS"
+            },
+            {
+                t: "tailwindCSS"
+            },
+            {
+                t: "expressJS"
+            },
+            {
+                t: "mongoDB"
+            },
+        ],
+        live: "https://patagoniaexplore.com/",
+        github: "",
+    },
     {
         id: 1,
         img: nilmrc,
@@ -114,7 +136,7 @@ const ProjectsData = [
             {
                 t: "tailwindcss"
             },
-           
+
         ],
         live: "https://tori-lim.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/tori-limited",
@@ -133,9 +155,9 @@ const ProjectsData = [
             {
                 t: "js"
             },
-          
+
         ],
-     
+
         title: "Quiz app with timer functionality",
 
         live: "https://quiz-tarikul.netlify.app/",
@@ -155,7 +177,7 @@ const ProjectsData = [
             {
                 t: "js"
             },
-        
+
         ],
 
         title: "Keep app is for keep your daily notes.",
@@ -176,9 +198,9 @@ const ProjectsData = [
             {
                 t: "js"
             },
-        
+
         ],
-     
+
         title: "Responsive landing page design",
         live: "https://md-tarikulislam.github.io/pro1/",
         github: "https://github.com/Md-TarikulIslam/pro1",
@@ -197,7 +219,7 @@ const ProjectsData = [
             {
                 t: "js"
             },
-        
+
         ],
 
         title: "Responsive landing page design",
@@ -210,21 +232,21 @@ const ProjectsData = [
         name: "Car Service",
         title:
             "Car service is a project with MongoDB, you can check various car service method here",
-            tech: [
-                {
-                    t: "reactjs"
-                },
-                {
-                    t: "tailwindcss"
-                },
-                {
-                    t: "expressJS"
-                },
-                {
-                    t: "mongodb"
-                },
-            
-            ],
+        tech: [
+            {
+                t: "reactjs"
+            },
+            {
+                t: "tailwindcss"
+            },
+            {
+                t: "expressJS"
+            },
+            {
+                t: "mongodb"
+            },
+
+        ],
         live: "https://genius-car-8fe25.web.app",
         github: "https://github.com/Md-TarikulIslam/genius-car-client",
     },
@@ -246,7 +268,7 @@ const ProjectsData = [
             {
                 t: "firebase"
             },
-        
+
         ],
         title: "Newspaper is a website with authentication and daily news.",
         live: "https://newspaper-e362f.web.app/",
@@ -269,7 +291,7 @@ const ProjectsData = [
             {
                 t: "firebase"
             },
-        
+
         ],
 
         title: "This is a web site where you can select products and give order",
@@ -294,7 +316,7 @@ const ProjectsData = [
             {
                 t: "js"
             },
-        
+
         ],
 
         title:
@@ -319,10 +341,10 @@ const ProjectsData = [
             {
                 t: "js"
             },
-           
-        
+
+
         ],
-     
+
 
         title: "You can count your exercise daily for good health.",
 
@@ -366,10 +388,10 @@ const Projects = () => {
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-8'>
                     {
-                        visibleProjects.map(data => {
+                        visibleProjects.map((data, index) => {
                             return (
-                                <div className='mx-auto'>
-                                    <Card className="mt-6 w-88 group">
+                                <div className='mx-auto' key={index + 1}>
+                                    <Card className="mt-6 w-88 group md:hover:-translate-y-1 hover:shadow-2xl hover:shadow-black transition-all">
                                         <CardHeader color="blue-gray" className="relative h-56">
                                             <img
                                                 src={data.img}
@@ -404,11 +426,7 @@ const Projects = () => {
                                             </div>
                                         </CardBody>
                                         <CardFooter className="pt-0">
-                                            <div className='flex items-center justify-center gap-3'>
-                                                <a target='_blank' href={data.github}><Button className='p-1 bg-black'><FaGithub className='text-4xl' /> </Button></a>
-                                                <a target='_blank' href={data.live}><Button className='p-1 bg-black'><FaGlobe className='text-4xl' /> </Button></a>
-                                            </div>
-
+                                            <a target='_blank' href={data.live}><Button className='bg-black flex items-center gap-2 py-2'>Live <FcLink className='text-xl' /></Button></a>
                                         </CardFooter>
 
                                     </Card>
@@ -419,7 +437,7 @@ const Projects = () => {
                 </div>
                 {!open && !isButtonHidden && (
                     <div className="mb-8 -mt-4">
-                        <Button onClick={toggleOpen} className='bg-black flex items-center gap-2 mx-auto'>
+                        <Button onClick={toggleOpen} className='tracking-widest bg-black flex items-center gap-2 mx-auto'>
                             Show all <FcBinoculars className='text-xl' />
                         </Button>
                     </div>

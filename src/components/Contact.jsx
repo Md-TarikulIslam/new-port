@@ -1,10 +1,10 @@
-import { Button, Card, CardBody, Chip, Input, Textarea } from '@material-tailwind/react'
-import React, { useRef } from 'react'
 import emailjs from "@emailjs/browser";
+import { Button, Card, CardBody, Chip, Input, Textarea } from '@material-tailwind/react';
+import React, { useRef } from 'react';
+import { FcFeedback } from 'react-icons/fc';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { FcFeedback } from 'react-icons/fc';
-import img from "../assets/image/contact.png"
+import img from "../assets/image/contact.png";
 
 
 
@@ -23,14 +23,14 @@ const Contact = () => {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
+                    toast.success("Send Successfully!");
+                    e.target.reset();
                 },
                 (error) => {
-                    console.log(error.text);
+                    toast.error("Unsuccessful, Try Again!");
                 }
             );
-        toast.success("Success");
-        e.target.reset();
+
     };
     return (
         <div id='contact'>
@@ -95,7 +95,7 @@ const Contact = () => {
 
 
 
-                                    <Button className="mt-[2px] lg:mt-[10px] flex items-center gap-2" value="Send" type="submit">
+                                    <Button className="mt-[2px] tracking-widest lg:mt-[10px] flex items-center gap-2" value="Send" type="submit">
                                         Send Message <FcFeedback className='text-xl' />
                                     </Button>
                                 </form>

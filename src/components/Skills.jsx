@@ -1,36 +1,31 @@
 import {
-    Button,
     Card,
     CardBody,
     Chip,
     Timeline,
-    TimelineConnector,
     TimelineHeader,
-    TimelineIcon,
     TimelineItem,
     Typography
-
 } from "@material-tailwind/react";
-import img1 from '../assets/image/logos/1.png'
-import img2 from '../assets/image/logos/2.png'
-import img3 from '../assets/image/logos/3.png'
-import img4 from '../assets/image/logos/4.png'
-import img5 from '../assets/image/logos/5.png'
-import img6 from '../assets/image/logos/6.png'
-import img7 from '../assets/image/logos/7.png'
-import img8 from '../assets/image/logos/8.jpg'
-import img9 from '../assets/image/logos/9.png'
-import img10 from '../assets/image/logos/10.webp'
-import img11 from '../assets/image/logos/11.png'
-import img12 from '../assets/image/logos/12.png'
-import img13 from '../assets/image/logos/13.png'
-import img14 from '../assets/image/logos/14.webp'
-import img15 from '../assets/image/logos/15.png'
-import img16 from '../assets/image/logos/16.png'
-import img17 from '../assets/image/logos/17.png'
+import img1 from '../assets/image/logos/1.png';
+import img10 from '../assets/image/logos/10.webp';
+import img11 from '../assets/image/logos/11.png';
+import img12 from '../assets/image/logos/12.png';
+import img13 from '../assets/image/logos/13.png';
+import img14 from '../assets/image/logos/14.webp';
+import img15 from '../assets/image/logos/15.png';
+import img16 from '../assets/image/logos/16.png';
+import img17 from '../assets/image/logos/17.png';
+import img2 from '../assets/image/logos/2.png';
+import img3 from '../assets/image/logos/3.png';
+import img4 from '../assets/image/logos/4.png';
+import img5 from '../assets/image/logos/5.png';
+import img6 from '../assets/image/logos/6.png';
+import img7 from '../assets/image/logos/7.png';
+import img9 from '../assets/image/logos/9.png';
 
 const allData = [
-    
+
     {
         id: 2,
         img: img2,
@@ -158,9 +153,9 @@ export default function Skills() {
 
                             <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
                                 {
-                                    allData.map(data => {
+                                    allData.map((data, index) => {
                                         return (
-                                            <div className="flex flex-col items-center gap-1">
+                                            <div className="flex flex-col items-center gap-1" key={index + 1}>
                                                 <div className="transition   ease-in-out rounded-2xl bg-[#fef4f5] shadow-sm hover:scale-[1.05] hover:shadow-white">
                                                     <img className="w-14 h-14  mx-auto p-2" src={data.img} alt="" />
 
@@ -176,12 +171,12 @@ export default function Skills() {
                         </div>
                         <div className="flex-1">
                             {
-                                jobData.map(job => {
+                                jobData.map((job, index) => {
                                     return (
-                                        <div>
+                                        <div key={index + 1}>
                                             <Timeline>
                                                 <TimelineItem className="lg:h-32 h-40">
-                                                    <TimelineHeader className="relative transition  ease-in-out rounded-2xl  hover:scale-[1.03] bg-[#fef4f5] py-3 pl-4 pr-8 shadow-md hover:shadow-white">
+                                                    <TimelineHeader className="relative transition  ease-in-out rounded-2xl  hover:scale-[1.03] bg-[#fef4f5] py-3 pl-4 pr-8">
 
                                                         <div className="flex flex-col gap-1 ">
                                                             <Typography className="text-2xl text-orange-900 h-16 lg:h-9" color="blue-gray">
