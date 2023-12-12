@@ -33,24 +33,24 @@ export default function About() {
                         <div className="flex gap-3 justify-center lg:justify-start">
                             <div className="h-24 w-24 lg:h-36 lg:w-36 border border-blue-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-blue-900 hover:text-gray-300">
                                 <Typography><FcIdea className="text-3xl" /> </Typography>
-                                <Typography className="my-2 font-bold">
+                                <Typography className="my-2 font-bold tracking-widest text-sm lg:text-[16px]">
                                     Experience
                                 </Typography>
-                                <Typography className="text-xs">1 Year Working</Typography>
+                                <Typography className="text-xs lg:text-sm">1 Year Working</Typography>
                             </div>
                             <div className="h-24 w-24 lg:h-36 lg:w-36 border border-blue-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-blue-900 hover:text-gray-300">
                                 <Typography><FcCheckmark className="text-3xl" /> </Typography>
-                                <Typography className="my-2 font-bold">
+                                <Typography className="my-2 font-bold tracking-widest text-sm lg:text-[16px]">
                                     Completed
                                 </Typography>
-                                <Typography className="text-sm">13+ Projects</Typography>
+                                <Typography className="text-xs lg:text-sm">13+ Projects</Typography>
                             </div>
                             <div className="h-24 w-24 lg:h-36 lg:w-36 border border-blue-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-blue-900 hover:text-gray-300">
                                 <Typography><FcSupport className="text-3xl" /> </Typography>
-                                <Typography className="my-2 font-bold">
+                                <Typography className="my-2 font-bold tracking-widest text-sm lg:text-[16px]">
                                     Support
                                 </Typography>
-                                <Typography className="text-sm">Online 24/7</Typography>
+                                <Typography className="text-xs lg:text-sm">Online 24/7</Typography>
                             </div>
 
                         </div>

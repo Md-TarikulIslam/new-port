@@ -26,7 +26,7 @@ const Hero = () => {
                     />
                 </CardHeader>
                 <CardBody className='flex-1'>
-                    <Typography variant="h6" color="gray" className="uppercase">
+                    <Typography variant="h6" color="gray" className="uppercase tracking-widest">
                         hi, i'm
                     </Typography>
                     <Typography color="blue-gray" className="my-4 text-3xl uppercase lg:text-5xl font-bold">

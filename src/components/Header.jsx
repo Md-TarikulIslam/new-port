@@ -21,12 +21,12 @@ export default function Header() {
     }, []);
 
     const navList = (
-        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4">
             <a href="#home">  <Typography
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item1' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-lg hover:bg-[#e6e9ee] hover:text-black font-semibold tracking-wider ${selectedItem === 'item1' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item1')}
             >
@@ -38,7 +38,7 @@ export default function Header() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item2' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-lg hover:bg-[#e6e9ee] hover:text-black font-semibold tracking-wider ${selectedItem === 'item2' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item2')}
             >
@@ -50,7 +50,7 @@ export default function Header() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item3' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-lg hover:bg-[#e6e9ee] hover:text-black font-semibold tracking-wider ${selectedItem === 'item3' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item3')}
             >
@@ -62,7 +62,7 @@ export default function Header() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item4' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-lg hover:bg-[#e6e9ee] hover:text-black font-semibold tracking-wider ${selectedItem === 'item4' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item4')}
             >
@@ -74,7 +74,7 @@ export default function Header() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className={`cursor-pointer px-4 py-2 rounded-full hover:bg-[#e6e9ee] hover:text-black font-semibold ${selectedItem === 'item5' ? 'bg-blue-900 text-white' : ''
+                className={`cursor-pointer px-4 py-2 rounded-lg hover:bg-[#e6e9ee] hover:text-black font-semibold tracking-wider ${selectedItem === 'item5' ? 'bg-blue-900 text-white' : ''
                     }`}
                 onClick={() => handleItemClick('item5')}
             >

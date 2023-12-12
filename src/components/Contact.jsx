@@ -95,7 +95,7 @@ const Contact = () => {
 
 
 
-                                    <Button className="mt-[2px] tracking-widest lg:mt-[10px] flex items-center gap-2" value="Send" type="submit">
+                                    <Button className="mt-[2px] tracking-widest lg:mt-[10px] flex items-center gap-2 bg-black" value="Send" type="submit">
                                         Send Message <FcFeedback className='text-xl' />
                                     </Button>
                                 </form>

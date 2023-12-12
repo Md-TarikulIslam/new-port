@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='mx-auto py-10 bg-white bg-opacity-60 mt-10' style={{ boxShadow: "1px 0px 7px #cad4de" }}>
             <div className='mx-auto flex flex-col'>
-                <p className='text-center font-bold text-lg lg:text-2xl font'>Md. Tarikul Islam</p>
+                <p className='text-center font-bold text-lg lg:text-2xl font uppercase tracking-widest'>Md. Tarikul Islam</p>
                 <div className='flex w-96 justify-center mt-2 lg:mt-5 mx-auto gap-1 lg:gap-2 pb-8 lg:pb-0'>
                     <a target='_blank' href="https://www.facebook.com/alwaysnayon"><FaFacebookF className='text-3xl rounded-lg  lg:text-4xl hover:shadow-white shadow-sm bg-white p-2 transition   ease-in-out' /></a>
                     <a target='_blank' href="https://www.linkedin.com/in/md-tarikul-islam-0ba0142a1"> <FaLinkedinIn className='text-3xl lg:text-4xl rounded-lg hover:shadow-white shadow-sm bg-white p-2 transition   ease-in-out' /></a>
