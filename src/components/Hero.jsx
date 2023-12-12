@@ -29,7 +29,7 @@ const Hero = () => {
                     <Typography variant="h6" color="gray" className="uppercase">
                         hi, i'm
                     </Typography>
-                    <Typography color="blue-gray" className="my-4 text-4xl uppercase lg:text-5xl font-bold">
+                    <Typography color="blue-gray" className="my-4 text-3xl uppercase lg:text-5xl font-bold">
                         Md. Tarikul Islam
                     </Typography>
                     <Typography color="gray" className="mb-4 font-normal ">

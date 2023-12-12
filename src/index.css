@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 .font {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Helvetica", sans-serif !important;
 }
 
 code {
