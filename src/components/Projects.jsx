@@ -24,9 +24,33 @@ import keep from "../assets/image/pro_img/6keep.png";
 import shop from "../assets/image/pro_img/7shop.png";
 import newspaper from "../assets/image/pro_img/8news.png";
 import car from "../assets/image/pro_img/a.png";
+import suwq from '../assets/image/pro_img/suwq.png'
 
 
 const ProjectsData = [
+    {
+        id: 1555,
+        img: suwq,
+        name: "SUWQ",
+        title:
+            "This is a eCommerce project. User can register, login to buy their desired products from here.",
+        tech: [
+            {
+                t: "ReactJS"
+            },
+            {
+                t: "tailwindCSS"
+            },
+            {
+                t: "expressJS"
+            },
+            {
+                t: "mongoDB"
+            },
+        ],
+        live: "https://ecom2023.netlify.app/",
+        github: "",
+    },
     {
         id: 15,
         img: patagonia,
@@ -51,7 +75,7 @@ const ProjectsData = [
         github: "",
     },
     {
-        id: 1,
+        id: 100,
         img: nilmrc,
         name: "National Institute of Laboratory Medicine & Referral Centre",
         title:
@@ -93,7 +117,7 @@ const ProjectsData = [
                 t: "mongoDB"
             },
         ],
-        live: "https://nextjs-project-tawny.vercel.app/",
+        live: "https://life-match.vercel.app/",
         github: "",
     },
 
@@ -227,7 +251,7 @@ const ProjectsData = [
         github: "https://github.com/Md-TarikulIslam/pro2",
     },
     {
-        id: 1,
+        id: 1424,
         img: car,
         name: "Car Service",
         title:
@@ -252,7 +276,7 @@ const ProjectsData = [
     },
 
     {
-        id: 4,
+        id: 4758,
         img: newspaper,
         name: "NewsPaper",
         tech: [
@@ -275,7 +299,7 @@ const ProjectsData = [
         github: "https://github.com/Md-TarikulIslam/newspaper-client",
     },
     {
-        id: 5,
+        id: 553,
         img: shop,
         name: "Shopping Website",
         tech: [
@@ -300,7 +324,7 @@ const ProjectsData = [
         github: "https://github.com/Md-TarikulIslam/shopping-with-authentication",
     },
     {
-        id: 6,
+        id: 67474,
         img: player,
         name: "Best Player",
         tech: [
@@ -328,7 +352,7 @@ const ProjectsData = [
 
 
     {
-        id: 9,
+        id: 9747474,
         img: fitness,
         name: "Fitness Freak",
         tech: [
@@ -391,7 +415,7 @@ const Projects = () => {
                         visibleProjects.map((data, index) => {
                             return (
                                 <div className='mx-auto' key={index + 1}>
-                                    <Card className="mt-6 w-88 group md:hover:-translate-y-1 hover:shadow-2xl hover:shadow-black transition-all">
+                                    <Card className="mt-6 w-88 group md:hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-900 transition-all">
                                         <CardHeader color="blue-gray" className="relative h-56">
                                             <img
                                                 src={data.img}

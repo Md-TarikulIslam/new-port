@@ -55,7 +55,7 @@ export default function About() {
 
                         </div>
                         <Typography color="gray" className="my-2 text-xs md:text-sm lg:text-base font-normal text-justify  mx-auto">
-                            Hello, I am Md. Tarikul Islam, and I am a highly skilled web developer with a passion for programming. I Recently completed my B.Sc in Computer Science and Engineering (CSE) at Bangladesh Army University of Engineering & Technology (BAUET).
+                            Hello, I am Md. Tarikul Islam, and I am a highly skilled web developer with a passion for programming. I recently completed my B.Sc in Computer Science and Engineering (CSE) at Bangladesh Army University of Engineering & Technology (BAUET).
 
                             I am passionate about continuous learning and have completed various courses on different online platforms, including 10 Minute School, Bohubrihi, SoloLearn, Simplilearn, and FreeCodeCamp, to further enhance my knowledge and skills.
 
