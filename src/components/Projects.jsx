@@ -48,7 +48,7 @@ const ProjectsData = [
                 t: "mongoDB"
             },
         ],
-        live: "https://ecom2023.netlify.app/",
+        live: "https://www.suwq.online/",
         github: "",
     },
     {

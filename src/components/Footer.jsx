@@ -12,7 +12,7 @@ const Footer = () => {
                     <a target='_blank' href="https://twitter.com/tarikul_nayon"><FaTwitter className='text-3xl rounded-lg lg:text-4xl hover:shadow-white shadow-sm bg-white p-2 transition   ease-in-out' /></a>
                     <a target='_blank' href="https://github.com/Md-TarikulIslam"> <FaGithubAlt className='text-3xl lg:text-4xl rounded-lg hover:shadow-white shadow-sm bg-white p-2 transition   ease-in-out' /></a>
                 </div>
-                <p className='font text-center text-xs -mt-5 lg:mb-0 mb-7 lg:mt-5 flex items-center justify-center gap-1 '><FaRegCopyright /> All rights reserved.</p>
+                <p className='font text-center text-xs -mt-5 lg:mb-0 mb-7 lg:mt-5 flex items-center justify-center gap-1 '><FaRegCopyright /> 2024 All rights reserved.</p>
             </div>
         </div>
     )
