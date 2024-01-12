@@ -25,6 +25,7 @@ import shop from "../assets/image/pro_img/7shop.png";
 import newspaper from "../assets/image/pro_img/8news.png";
 import car from "../assets/image/pro_img/a.png";
 import suwq from '../assets/image/pro_img/suwq.png'
+import game from '../assets/image/pro_img/logo.png'
 
 
 const ProjectsData = [
@@ -52,11 +53,11 @@ const ProjectsData = [
         github: "",
     },
     {
-        id: 15,
-        img: patagonia,
-        name: "Patagonia Explore",
+        id: 15555,
+        img: game,
+        name: "Gaming",
         title:
-            "This is a project for a travel guider. There are many landing pages and many information's are there.",
+            "This is a Gaming sell and buy project. User can register, login to sell and buy their desired products from here.",
         tech: [
             {
                 t: "ReactJS"
@@ -71,7 +72,7 @@ const ProjectsData = [
                 t: "mongoDB"
             },
         ],
-        live: "https://patagoniaexplore.com/",
+        live: "https://www.suwq.online/",
         github: "",
     },
     {
@@ -97,6 +98,30 @@ const ProjectsData = [
         live: "https://main.d3k4uhf97xt2iw.amplifyapp.com/",
         github: "",
     },
+    {
+        id: 15,
+        img: patagonia,
+        name: "Patagonia Explore",
+        title:
+            "This is a project for a travel guider. There are many landing pages and many information's are there.",
+        tech: [
+            {
+                t: "ReactJS"
+            },
+            {
+                t: "tailwindCSS"
+            },
+            {
+                t: "expressJS"
+            },
+            {
+                t: "mongoDB"
+            },
+        ],
+        live: "https://patagoniaexplore.com/",
+        github: "",
+    },
+    
     {
         id: 1,
         img: connect,
