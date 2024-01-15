@@ -119,7 +119,7 @@ const jobData = [
         id: 1,
         position: "Jr. Software Engineer",
         company: "Horizon Rising Star",
-        time: "May, 2023 - Present"
+        time: "May, 2023 - December, 2023"
     },
     {
         id: 1,

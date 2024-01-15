@@ -72,7 +72,7 @@ const ProjectsData = [
                 t: "mongoDB"
             },
         ],
-        live: "https://www.suwq.online/",
+        live: "https://idev-gaming.netlify.app/",
         github: "",
     },
     {
