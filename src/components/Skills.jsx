@@ -146,7 +146,6 @@ export default function Skills() {
 
             <Card className="bg-gradient-to-r from-cyan-50 to-blue-100">
                 <CardBody >
-                    <Typography className="text-center mb-4 text-black">My Technical Level</Typography>
                     <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 items-center" >
 
                         <div className="flex-1">

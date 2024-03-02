@@ -10,22 +10,13 @@ import {
 import React, { useState } from 'react';
 
 import { FcBinoculars, FcLink } from 'react-icons/fc';
-import player from "../assets/image/pro_img/10player.png";
-import fitness from "../assets/image/pro_img/11fitness.png";
 import nilmrc from "../assets/image/pro_img/12nilmrc.png";
 import connect from "../assets/image/pro_img/13connect.png";
 import patagonia from "../assets/image/pro_img/15.png";
 import suffix from "../assets/image/pro_img/1suffix.png";
 import tori from "../assets/image/pro_img/2tori.png";
-import pro2 from "../assets/image/pro_img/3.weather.png";
-import pro1 from "../assets/image/pro_img/4pro1.png";
-import quiz from "../assets/image/pro_img/5quiz.png";
-import keep from "../assets/image/pro_img/6keep.png";
-import shop from "../assets/image/pro_img/7shop.png";
-import newspaper from "../assets/image/pro_img/8news.png";
-import car from "../assets/image/pro_img/a.png";
-import suwq from '../assets/image/pro_img/suwq.png'
-import game from '../assets/image/pro_img/logo.png'
+import game from '../assets/image/pro_img/logo.png';
+import suwq from '../assets/image/pro_img/suwq.png';
 
 
 const ProjectsData = [
@@ -121,7 +112,7 @@ const ProjectsData = [
         live: "https://patagoniaexplore.com/",
         github: "",
     },
-    
+
     {
         id: 1,
         img: connect,
@@ -190,216 +181,6 @@ const ProjectsData = [
         live: "https://tori-lim.netlify.app/",
         github: "https://github.com/Md-TarikulIslam/tori-limited",
     },
-    {
-        id: 7,
-        img: quiz,
-        name: "Quiz",
-        tech: [
-            {
-                t: "html5"
-            },
-            {
-                t: "css3"
-            },
-            {
-                t: "js"
-            },
-
-        ],
-
-        title: "Quiz app with timer functionality",
-
-        live: "https://quiz-tarikul.netlify.app/",
-        github: "https://github.com/Md-TarikulIslam/quiz-app",
-    },
-    {
-        id: 8,
-        img: keep,
-        name: "Keep",
-        tech: [
-            {
-                t: "html5"
-            },
-            {
-                t: "css3"
-            },
-            {
-                t: "js"
-            },
-
-        ],
-
-        title: "Keep app is for keep your daily notes.",
-        live: "https://tarikul-keep.netlify.app/",
-        github: "https://github.com/Md-TarikulIslam/keep",
-    },
-    {
-        id: 10,
-        img: pro1,
-        name: "Apple Website",
-        tech: [
-            {
-                t: "html5"
-            },
-            {
-                t: "css3"
-            },
-            {
-                t: "js"
-            },
-
-        ],
-
-        title: "Responsive landing page design",
-        live: "https://md-tarikulislam.github.io/pro1/",
-        github: "https://github.com/Md-TarikulIslam/pro1",
-    },
-    {
-        id: 11,
-        img: pro2,
-        name: "Landing Page",
-        tech: [
-            {
-                t: "html5"
-            },
-            {
-                t: "css3"
-            },
-            {
-                t: "js"
-            },
-
-        ],
-
-        title: "Responsive landing page design",
-        live: "https://md-tarikulislam.github.io/pro2/",
-        github: "https://github.com/Md-TarikulIslam/pro2",
-    },
-    {
-        id: 1424,
-        img: car,
-        name: "Car Service",
-        title:
-            "Car service is a project with MongoDB, you can check various car service method here",
-        tech: [
-            {
-                t: "reactjs"
-            },
-            {
-                t: "tailwindcss"
-            },
-            {
-                t: "expressJS"
-            },
-            {
-                t: "mongodb"
-            },
-
-        ],
-        live: "https://genius-car-8fe25.web.app",
-        github: "https://github.com/Md-TarikulIslam/genius-car-client",
-    },
-
-    {
-        id: 4758,
-        img: newspaper,
-        name: "NewsPaper",
-        tech: [
-            {
-                t: "reactjs"
-            },
-            {
-                t: "Bootstrap"
-            },
-            {
-                t: "CSS3"
-            },
-            {
-                t: "firebase"
-            },
-
-        ],
-        title: "Newspaper is a website with authentication and daily news.",
-        live: "https://newspaper-e362f.web.app/",
-        github: "https://github.com/Md-TarikulIslam/newspaper-client",
-    },
-    {
-        id: 553,
-        img: shop,
-        name: "Shopping Website",
-        tech: [
-            {
-                t: "reactjs"
-            },
-            {
-                t: "Bootstrap"
-            },
-            {
-                t: "CSS3"
-            },
-            {
-                t: "firebase"
-            },
-
-        ],
-
-        title: "This is a web site where you can select products and give order",
-
-        live: "https://tarikul-shop.netlify.app/",
-        github: "https://github.com/Md-TarikulIslam/shopping-with-authentication",
-    },
-    {
-        id: 67474,
-        img: player,
-        name: "Best Player",
-        tech: [
-            {
-                t: "html5"
-            },
-            {
-                t: "css3"
-            },
-            {
-                t: "bootstrap"
-            },
-            {
-                t: "js"
-            },
-
-        ],
-
-        title:
-            "Select best 5 players for your upcoming match and also count their expenses.",
-
-        live: "https://five-players.netlify.app/",
-        github: "https://github.com/Md-TarikulIslam/Select-Players",
-    },
-
-
-    {
-        id: 9747474,
-        img: fitness,
-        name: "Fitness Freak",
-        tech: [
-            {
-                t: "html5"
-            },
-            {
-                t: "css3"
-            },
-            {
-                t: "js"
-            },
-
-
-        ],
-
-
-        title: "You can count your exercise daily for good health.",
-
-        live: "https://preeminent-entremet-49bfe8.netlify.app/",
-        github: "https://github.com/Md-TarikulIslam/Fitness-Freak",
-    },
 
 
 ];
@@ -445,7 +226,7 @@ const Projects = () => {
                                             <img
                                                 src={data.img}
                                                 alt="card-image"
-                                                className='object-cover w-full h-full group-hover:scale-110 transition-all'
+                                                className='object-cover w-full h-full group-hover:scale-105 transition-all '
                                             />
                                         </CardHeader>
                                         <CardBody>

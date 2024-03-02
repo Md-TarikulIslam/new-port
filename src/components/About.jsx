@@ -31,21 +31,21 @@ export default function About() {
                 <figcaption className="absolute bottom-8 left-2/4 flex w-full lg:w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-4 px-2  lg:px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
                     <div className="">
                         <div className="flex gap-3 justify-center lg:justify-start">
-                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-blue-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-blue-900 hover:text-gray-300">
+                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-black hover:border-none p-1 lg:p-4 rounded-lg flex flex-col items-center hover:bg-black hover:text-gray-300">
                                 <Typography><FcIdea className="text-3xl" /> </Typography>
                                 <Typography className="my-2 font-bold tracking-widest text-sm lg:text-[16px]">
                                     Experience
                                 </Typography>
                                 <Typography className="text-xs lg:text-sm">1 Year Working</Typography>
                             </div>
-                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-blue-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-blue-900 hover:text-gray-300">
+                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-black hover:border-none p-1 lg:p-4 rounded-lg flex flex-col items-center hover:bg-black hover:text-gray-300">
                                 <Typography><FcCheckmark className="text-3xl" /> </Typography>
                                 <Typography className="my-2 font-bold tracking-widest text-sm lg:text-[16px]">
                                     Completed
                                 </Typography>
                                 <Typography className="text-xs lg:text-sm">13+ Projects</Typography>
                             </div>
-                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-blue-600 hover:border-none p-1 lg:p-4 rounded-xl flex flex-col items-center hover:bg-blue-900 hover:text-gray-300">
+                            <div className="h-24 w-24 lg:h-36 lg:w-36 border border-black hover:border-none p-1 lg:p-4 rounded-lg flex flex-col items-center hover:bg-black hover:text-gray-300">
                                 <Typography><FcSupport className="text-3xl" /> </Typography>
                                 <Typography className="my-2 font-bold tracking-widest text-sm lg:text-[16px]">
                                     Support
