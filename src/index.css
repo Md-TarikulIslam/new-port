@@ -29,8 +29,24 @@ code {
   font-family: "Helvetica";
   src: local("Helvetica"), url("../src/font/Helvetica.ttf") format("truetype");
   font-weight: normal;
+ 
 }
 
 .Helvetica {
   font-family: "Helvetica";
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+  ::-webkit-scrollbar-track {
+  background: #f2f5fc; 
+}
+  ::-webkit-scrollbar-thumb {
+  background: #b6d5ef; 
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  
+  background: #b6d5ef; 
+} 

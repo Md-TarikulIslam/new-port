@@ -2,9 +2,6 @@ import {
     Card,
     CardBody,
     Chip,
-    Timeline,
-    TimelineHeader,
-    TimelineItem,
     Typography
 } from "@material-tailwind/react";
 import img1 from '../assets/image/logos/1.png';
@@ -168,29 +165,23 @@ export default function Skills() {
                                 }
                             </div>
                         </div>
-                        <div className="flex-1">
+                        <div className="flex-1 space-y-4">
                             {
                                 jobData.map((job, index) => {
                                     return (
-                                        <div key={index + 1}>
-                                            <Timeline>
-                                                <TimelineItem className="lg:h-32 h-40">
-                                                    <TimelineHeader className="relative transition  ease-in-out rounded-2xl  hover:scale-[1.03] bg-[#fef4f5] py-3 pl-4 pr-8">
+                                        <div key={index + 1} className=" rounded-2xl hover:shadow-white hover:shadow-md bg-[#fef4f5] py-3 pl-4 pr-8">
 
-                                                        <div className="flex flex-col gap-1 ">
-                                                            <Typography className="text-2xl text-orange-900 h-16 lg:h-9" color="blue-gray">
-                                                                {job.position}
-                                                            </Typography>
-                                                            <Typography className="text-blue-900">
-                                                                {job.company}
-                                                            </Typography>
-                                                            <Typography variant="small" color="gray" className="font-normal">
-                                                                {job.time}
-                                                            </Typography>
-                                                        </div>
-                                                    </TimelineHeader>
-                                                </TimelineItem>
-                                            </Timeline>
+                                            <div className="flex flex-col gap-1 ">
+                                                <Typography className="text-xl text-black font-bold" color="blue-gray">
+                                                    {job.position}
+                                                </Typography>
+                                                <Typography className="text-blue-900">
+                                                    {job.company}
+                                                </Typography>
+                                                <Typography variant="small" color="gray" className="font-normal">
+                                                    {job.time}
+                                                </Typography>
+                                            </div>
                                         </div>
                                     )
                                 })
