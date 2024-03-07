@@ -9,8 +9,11 @@ import React from 'react';
 import { FaGithubAlt } from 'react-icons/fa';
 import { FcFeedback, FcNews, FcPhoneAndroid } from 'react-icons/fc';
 import img from '../assets/image/pro.png';
+import { useTransform, useViewportScroll, motion } from "framer-motion";
 
 const Hero = () => {
+    const { scrollYProgress } = useViewportScroll()
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 3]);
     return (
         <div className="max-w-screen-xl mx-auto px-2 lg:px-0 " id='home'>
             <Card className="w-full mb-10  flex-col lg:flex-row  items-center bg-[url('https://www.imageshine.in/uploads/gallery/Free-vector-hand-painted-watercolor-abstract-watercolor-background.jpg')] bg-cover bg-center">
@@ -19,11 +22,21 @@ const Hero = () => {
                     floated={false}
                     className="m-0 w-4/5 lg:w-2/5 shrink-0 rounded-r-none flex-1 bg-transparent"
                 >
-                    <img
-                        src={img}
-                        alt="card-image"
-                        className="lg:h-full w-full object-cover"
-                    />
+                    <motion.div
+                        style={{ scale }}
+                    >
+                        <motion.div
+                            style={{
+                                scaleY: scrollYProgress
+                            }}
+                        />
+                        <img
+                            src={img}
+                            alt="card-image"
+                            className="lg:h-full w-full object-cover"
+                        />
+                    </motion.div>
+
                 </CardHeader>
                 <CardBody className='flex-1'>
                     <Typography variant="h6" color="gray" className="uppercase tracking-widest">

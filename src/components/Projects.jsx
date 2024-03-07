@@ -9,6 +9,7 @@ import {
 } from "@material-tailwind/react";
 import React, { useState } from 'react';
 
+import { motion } from 'framer-motion';
 import { FcBinoculars, FcLink } from 'react-icons/fc';
 import nilmrc from "../assets/image/pro_img/12nilmrc.png";
 import connect from "../assets/image/pro_img/13connect.png";
@@ -198,6 +199,7 @@ const Projects = () => {
         setIsButtonHidden(true);
     };
 
+
     const visibleProjects = open ? ProjectsData : ProjectsData.slice(0, 3);
     return (
         <div id='projects'>
@@ -220,7 +222,10 @@ const Projects = () => {
                     {
                         visibleProjects.map((data, index) => {
                             return (
-                                <div className='mx-auto' key={index + 1}>
+                                <motion.div className='mx-auto' key={index + 1}
+                                >
+
+
                                     <Card className="mt-6 w-88 group md:hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-900 transition-all">
                                         <CardHeader color="blue-gray" className="relative h-56">
                                             <img
@@ -260,7 +265,7 @@ const Projects = () => {
                                         </CardFooter>
 
                                     </Card>
-                                </div>
+                                </motion.div>
                             )
                         })
                     }
