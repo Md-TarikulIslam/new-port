@@ -39,10 +39,11 @@ const Hero = () => {
 
                 </CardHeader>
                 <CardBody className='flex-1'>
-                    <Typography variant="h6" color="gray" className="uppercase tracking-widest">
+                  <motion.div  initial={{x:-100}} whileInView={{x:0}} transition={{delay:0.2, type:"spring", stiffness:120}}>
+                  <Typography variant="h6" color="gray" className="uppercase tracking-widest">
                         hi, i'm
                     </Typography>
-                    <Typography color="blue-gray" className="my-4 text-3xl uppercase lg:text-5xl font-bold">
+                    <Typography  color="blue-gray" className="my-4 text-3xl uppercase lg:text-5xl font-bold">
                         Md. Tarikul Islam
                     </Typography>
                     <Typography color="gray" className="mb-4 font-normal ">
@@ -59,6 +60,7 @@ const Hero = () => {
 
                     <a href="https://drive.google.com/uc?id=1a19KFmNoYVRvmXOH_tv0F9lmeuMVn0rj&export=download"
                         download><Button className="flex tracking-widest items-center gap-2 mt-4 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
+                  </motion.div>
                 </CardBody>
             </Card>
         </div>

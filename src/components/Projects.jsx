@@ -11,184 +11,7 @@ import React, { useState } from 'react';
 
 import { motion } from 'framer-motion';
 import { FcBinoculars, FcLink } from 'react-icons/fc';
-import nilmrc from "../assets/image/pro_img/12nilmrc.png";
-import connect from "../assets/image/pro_img/13connect.png";
-import patagonia from "../assets/image/pro_img/15.png";
-import suffix from "../assets/image/pro_img/1suffix.png";
-import tori from "../assets/image/pro_img/2tori.png";
-import game from '../assets/image/pro_img/logo.png';
-import suwq from '../assets/image/pro_img/suwq.png';
-
-
-const ProjectsData = [
-    {
-        id: 1555,
-        img: suwq,
-        name: "SUWQ",
-        title:
-            "This is a eCommerce project. User can register, login to buy their desired products from here.",
-        tech: [
-            {
-                t: "ReactJS"
-            },
-            {
-                t: "tailwindCSS"
-            },
-            {
-                t: "expressJS"
-            },
-            {
-                t: "mongoDB"
-            },
-        ],
-        live: "https://www.suwq.online/",
-        github: "",
-    },
-    {
-        id: 15555,
-        img: game,
-        name: "Gaming",
-        title:
-            "This is a Gaming sell and buy project. User can register, login to sell and buy their desired products from here.",
-        tech: [
-            {
-                t: "ReactJS"
-            },
-            {
-                t: "tailwindCSS"
-            },
-            {
-                t: "expressJS"
-            },
-            {
-                t: "mongoDB"
-            },
-        ],
-        live: "https://idev-gaming.netlify.app/",
-        github: "",
-    },
-    {
-        id: 100,
-        img: nilmrc,
-        name: "National Institute of Laboratory Medicine & Referral Centre",
-        title:
-            "This is a Government project. There are many landing pages and many official information is there.",
-        tech: [
-            {
-                t: "ReactJS"
-            },
-            {
-                t: "tailwindCSS"
-            },
-            {
-                t: "expressJS"
-            },
-            {
-                t: "mongoDB"
-            },
-        ],
-        live: "https://main.d3k4uhf97xt2iw.amplifyapp.com/",
-        github: "",
-    },
-    {
-        id: 15,
-        img: patagonia,
-        name: "Patagonia Explore",
-        title:
-            "This is a project for a travel guider. There are many landing pages and many information's are there.",
-        tech: [
-            {
-                t: "ReactJS"
-            },
-            {
-                t: "tailwindCSS"
-            },
-            {
-                t: "expressJS"
-            },
-            {
-                t: "mongoDB"
-            },
-        ],
-        live: "https://patagoniaexplore.com/",
-        github: "",
-    },
-
-    {
-        id: 1,
-        img: connect,
-        name: "Connect",
-        title:
-            "This is a social media app, you can post and accept requests. Connect with your favorite person",
-        tech: [
-            {
-                t: "nextjs"
-            },
-            {
-                t: "tailwindCSS"
-            },
-            {
-                t: "expressJS"
-            },
-            {
-                t: "mongoDB"
-            },
-        ],
-        live: "https://life-match.vercel.app/",
-        github: "",
-    },
-
-    {
-        id: 2,
-        img: suffix,
-        name: "Suffix IT Limited",
-        tech: [
-            {
-                t: "ReactJS"
-            },
-            {
-                t: "css3"
-            },
-            {
-                t: "Bootstrap"
-            },
-            {
-                t: "swiperjs"
-            },
-        ],
-
-        title: "Suffix IT Limited is a IT service company with various program. Many landing pages design.",
-
-        live: "https://suffix-it.netlify.app/",
-        github: "https://github.com/Md-TarikulIslam/suffix_it",
-    },
-    {
-        id: 3,
-        img: tori,
-        name: "Tori Limited",
-        title: "Tori Limited is a IT service company with various program",
-        tech: [
-            {
-                t: "ReactJS"
-            },
-            {
-                t: "css3"
-            },
-            {
-                t: "tailwindcss"
-            },
-
-        ],
-        live: "https://tori-lim.netlify.app/",
-        github: "https://github.com/Md-TarikulIslam/tori-limited",
-    },
-
-
-];
-
-
-
-
+import { projectsData } from "../assets/static/data";
 
 const Projects = () => {
     const [open, setOpen] = useState(false);
@@ -199,8 +22,12 @@ const Projects = () => {
         setIsButtonHidden(true);
     };
 
+    const cardVariants = {
+        hidden: { opacity: 0, scale: 0.9, y: 20 },
+        visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5, ease: "easeInOut" } },
+    };
 
-    const visibleProjects = open ? ProjectsData : ProjectsData.slice(0, 3);
+    const visibleProjects = open ? projectsData : projectsData.slice(0, 3);
     return (
         <div id='projects'>
             <div className="max-w-screen-xl mx-auto px-2 lg:px-0 mt-10">
@@ -223,6 +50,10 @@ const Projects = () => {
                         visibleProjects.map((data, index) => {
                             return (
                                 <motion.div className='mx-auto' key={index + 1}
+                                    variants={cardVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: false }}
                                 >
 
 

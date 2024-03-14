@@ -5,8 +5,13 @@ import {
 } from "@material-tailwind/react";
 import { FcCheckmark, FcIdea, FcNews, FcSupport } from "react-icons/fc";
 import img from '../assets/image/com.jpg';
+import {motion} from 'framer-motion'
 
 export default function About() {
+    const cardVariants = {
+        hidden: { opacity: 0, scale: 0.9, y: 20 },
+        visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5, ease: "easeInOut" } },
+    };
     return (
         <div className="max-w-screen-xl mx-auto px-2 lg:px-0" id="about">
             <div className='max-w-min mb-3 '>
@@ -28,8 +33,11 @@ export default function About() {
                     src={img}
                     alt="image"
                 />
-                <figcaption className="absolute bottom-8 left-2/4 flex w-full lg:w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-4 px-2  lg:px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
-                    <div className="">
+                <motion.figcaption className="absolute bottom-8 left-2/4 flex w-full lg:w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-4 px-2  lg:px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
+                    <motion.div className=""  variants={cardVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: false }}>
                         <div className="flex gap-3 justify-center lg:justify-start">
                             <div className="h-24 w-24 lg:h-36 lg:w-36 border border-black hover:border-none p-1 lg:p-4 rounded-lg flex flex-col items-center hover:bg-black hover:text-gray-300">
                                 <Typography><FcIdea className="text-3xl" /> </Typography>
@@ -67,9 +75,9 @@ export default function About() {
                         </Typography>
                         <a href="https://drive.google.com/uc?id=1a19KFmNoYVRvmXOH_tv0F9lmeuMVn0rj&export=download"
                             download><Button className="flex tracking-widest items-center gap-2 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
-                    </div>
+                    </motion.div>
 
-                </figcaption>
+                </motion.figcaption>
             </figure>
         </div>
     );
