@@ -181,7 +181,7 @@ export const projectsData = [
     {
         id: 100,
         img: nilmrc,
-        name: "National Institute of Laboratory Medicine & Referral Centre",
+        name: "NILMRC",
         title:
             "This is a Government project. There are many landing pages and many official information is there.",
         tech: [
@@ -296,3 +296,21 @@ export const projectsData = [
 
 
 ];
+
+export const navList = [
+    {
+        name:'home'
+    },
+    {
+        name:'about'
+    },
+    {
+        name:'skills'
+    },
+    {
+        name:'projects'
+    },
+    {
+        name:'contact'
+    },
+]

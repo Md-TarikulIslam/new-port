@@ -62,14 +62,14 @@ const Projects = () => {
                                             <img
                                                 src={data.img}
                                                 alt="card-image"
-                                                className='object-cover w-full h-full group-hover:scale-105 transition-all '
+                                                className='object-cover w-full h-full group-hover:scale-105 transition-all object-top'
                                             />
                                         </CardHeader>
                                         <CardBody>
-                                            <Typography variant="h5" color="blue-gray" className=" h-16">
+                                            <Typography variant="h5" color="blue-gray" className="">
                                                 {data.name}
                                             </Typography>
-                                            <Typography className='h-20'>
+                                            <Typography className='h-20 my-4'>
                                                 {data.title}
                                             </Typography>
                                             <div className='grid grid-cols-2 gap-2'>
