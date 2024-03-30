@@ -58,7 +58,7 @@ const Hero = () => {
                         <a href="tel:01739426293"><p className='text-4xl'><FcPhoneAndroid /></p></a>
                     </div>
 
-                    <a href="https://drive.google.com/uc?id=1a19KFmNoYVRvmXOH_tv0F9lmeuMVn0rj&export=download"
+                    <a href="https://drive.google.com/uc?id=10BNHgoCiJFTiq0QpudWzhIkcQC6StKf6&export=download"
                         download><Button className="flex tracking-widest items-center gap-2 mt-4 bg-black">Download CV <FcNews className="text-xl" /></Button></a>
                   </motion.div>
                 </CardBody>

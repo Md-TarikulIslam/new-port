@@ -2,19 +2,25 @@ import {
     Navbar,
     Typography
 } from "@material-tailwind/react";
-import React from "react";
+import React, { useState } from "react";
 import { navList as menus } from "../assets/static/data";
 export default function Header() {
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const handleItemClick = (itemName) => {
+        setSelectedItem(itemName);
+    };
     const navList = (
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4">
             {
                 menus.map((menu) => (
                     <div key={menu.name}>
-                        <a href={`#${menu.name}`}>  <Typography
+                        <a href={`#${menu.name}`}  onClick={() => handleItemClick(menu.name)}>  <Typography
                             as="li"
                             variant="small"
                             color="blue-gray"
-                            className={`cursor-pointer px-4 py-2 rounded-lg hover:bg-[#e6e9ee] hover:text-black font-semibold tracking-wider capitalize`}
+                            className={`cursor-pointer px-4 py-2 rounded-lg hover:bg-[#e6e9ee] hover:text-black font-semibold tracking-wider capitalize ${
+                                selectedItem === menu.name ? 'bg-[#e6e9ee] text-blue-900' : ''}`}
 
                         >
                             <p className="flex items-center">
@@ -31,7 +37,6 @@ export default function Header() {
             <div className="container max-w-screen-xl mx-auto flex items-center justify-between text-blue-gray-900">
                 <a href="#home">
                     <p className="font-bold text-2xl text-black tracking-widest">T<span className="text-gray-400 text-lg">arikul.</span></p>
-
                 </a>
 
                 <div className="hidden lg:block">{navList}</div>

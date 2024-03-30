@@ -117,6 +117,12 @@ export const skillsData = [
 
 export const jobData = [
     {
+        id: 3,
+        position: "Jr. Software Developer",
+        company: "Sierra Solution",
+        time: "March, 2024 - Present"
+    },
+    {
         id: 1,
         position: "Jr. Software Engineer",
         company: "Horizon Rising Star",
